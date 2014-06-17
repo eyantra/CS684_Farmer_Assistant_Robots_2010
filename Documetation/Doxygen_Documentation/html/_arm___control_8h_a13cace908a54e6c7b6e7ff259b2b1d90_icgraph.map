@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" href="$_arm___control_8h.html#afb2fc70c822e01e854609938e5f05ba5" title="Function to rotate Camera to face left." alt="" coords="131,5,219,35"/>
+<area shape="rect" href="$_arm___control_8h.html#ad2b1808565325be9ef77569358971868" title="Function to rotate Camera to face front." alt="" coords="123,59,227,88"/>
+<area shape="rect" href="$_arm___control_8h.html#ab4d1826737c5c1d7d1d34e0f3e3d7006" title="Function to rotate Camera to face Right." alt="" coords="127,112,223,141"/>
+<area shape="rect" href="$_worker___complete_8c.html#a744180995c9d3d93c82f9314d9f1fbbe" title="Once the worker robot reaches the specifed location where the object was detected..." alt="" coords="276,60,361,89"/>
+<area shape="rect" href="$_worker___complete_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667" title="Execution begin here." alt="" coords="412,87,460,116"/>
+</map>

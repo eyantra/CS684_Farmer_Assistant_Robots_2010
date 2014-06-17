@@ -1,0 +1,51 @@
+<map id="G" name="G">
+<area shape="rect" href="$_scout___robot_2buzzer_8h.html#a7822c093795c72a5eaf02b9efa914915" title="BUZZER_ON" alt="" coords="336,5,435,35"/>
+<area shape="rect" href="$_arm___control_8h.html#ab4d1826737c5c1d7d1d34e0f3e3d7006" title="Function to rotate Camera to face Right." alt="" coords="337,59,433,88"/>
+<area shape="rect" href="$_worker___complete_8c.html#a744180995c9d3d93c82f9314d9f1fbbe" title="Once the worker robot reaches the specifed location where the object was detected..." alt="" coords="136,504,221,533"/>
+<area shape="rect" href="$_worker___complete_8c.html#a213460c7ccffed0cb4ad28fd34c62ba8" title="Calculate the exact distance of an object from the front of the robot in mm." alt="" coords="547,636,616,665"/>
+<area shape="rect" href="$_scout___robot_2lcd_8h.html#a71edb5dcd2805c0f4fc1526910d44136" title="LCD_DISPLAY_INT_2" alt="" coords="311,1056,460,1085"/>
+<area shape="rect" href="$_arm___control_8h.html#a2916657630de9105936250904d7611a7" title="Function to lower the arm gripper to position 0." alt="" coords="357,795,413,824"/>
+<area shape="rect" href="$_scout___robot_2motion_8h.html#aad2b5c3032b6186491dea9117e5fa608" title="MOTOR_LEFT_SPEED" alt="" coords="307,848,464,877"/>
+<area shape="rect" href="$_scout___robot_2motion_8h.html#aa9a316d01b0ac2faac57c463de947ff8" title="MOTOR_RIGHT_SPEED" alt="" coords="303,901,468,931"/>
+<area shape="rect" href="$_scout___robot_2motion_8h.html#a2590e4ebe90aee4206d58ff6c1a64ef5" title="MOVE_FWD" alt="" coords="715,691,811,720"/>
+<area shape="rect" href="$_scout___robot_2firebird__winavr_8h.html#ab01199c927ceda6f9520c7afb0f1b099" title="init_devices" alt="" coords="133,1320,224,1349"/>
+<area shape="rect" href="$_scout___robot_2firebird__winavr_8h.html#a0488fb29bb9c094d6b89d273d6ae3f1d" title="init_dist_measure" alt="" coords="117,1373,240,1403"/>
+<area shape="rect" href="$_scout___robot_2lcd_8h.html#ad338066e1bb54461c273b872652bd5b9" title="LCD_DISPLAY_INT_1" alt="" coords="104,1107,253,1136"/>
+<area shape="rect" href="$_scout___robot_2buzzer_8h.html#a8780094647a22cb567cb0d1023ac4406" title="buzzer_delay" alt="" coords="532,5,631,35"/>
+<area shape="rect" href="$_arm___control_8h.html#a13cace908a54e6c7b6e7ff259b2b1d90" title="servo_3" alt="" coords="548,85,615,115"/>
+<area shape="rect" href="$_worker___complete_2motion_8h.html#a211524abdbae5dd0a77807b843ec60c7" title="back_mm" alt="" coords="543,503,620,532"/>
+<area shape="rect" href="$_scout___robot_2motion_8h.html#a94ac7b12f6316deea91243b154b7abb4" title="STOP" alt="" coords="913,401,969,431"/>
+<area shape="rect" href="$_arm___control_8h.html#ad2b1808565325be9ef77569358971868" title="Function to rotate Camera to face front." alt="" coords="333,112,437,141"/>
+<area shape="rect" href="$_arm___control_8h.html#a8f50362140c38ff47031e158a04540a5" title="Function to grab object with the grabber. You can modify the values of grabberClose..." alt="" coords="361,219,409,248"/>
+<area shape="rect" href="$_arm___control_8h.html#a64ae6c440a4ed9892bdde8c4ae8de660" title="Lift" alt="" coords="365,688,405,717"/>
+<area shape="rect" href="$_worker___complete_8c.html#a0c9df54dbd6d34b2f4148de0c3de923b" title="Moves the worker Robot towards the object to be collected depending on how far the..." alt="" coords="341,477,429,507"/>
+<area shape="rect" href="$_arm___control_8h.html#a94c93747c8daa99d65c2a04c6be0748c" title="Function to release object from the grabber." alt="" coords="352,272,419,301"/>
+<area shape="rect" href="$_worker___complete_2motion_8h.html#ac66d8febdb0927d499eb451e211ec6db" title="RIGHT_TURN_BY" alt="" coords="517,401,645,431"/>
+<area shape="rect" href="$_arm___control_8h.html#a6c7ed6efeeb194c0a0c511380a31a2e5" title="servo_1_free" alt="" coords="337,741,433,771"/>
+<area shape="rect" href="$_arm___control_8h.html#ada43b85d1e8c8343f99fcdaa12b71c3e" title="servo_2_free" alt="" coords="337,531,433,560"/>
+<area shape="rect" href="$_arm___control_8h.html#a24305cafe8f6103e8434f56aa0df538a" title="servo_3_free" alt="" coords="337,584,433,613"/>
+<area shape="rect" href="$_worker___complete_8c.html#a32c4d0c2e2411ca3237d45985abdcaf7" title="This function is used to rotate the robot back to the white line." alt="" coords="345,165,425,195"/>
+<area shape="rect" href="$_worker___complete_2motion_8h.html#afc027345bdb5eb901ff0d7aa5ffa7306" title="linear_distance_mm" alt="" coords="695,531,831,560"/>
+<area shape="rect" href="$_scout___robot_2motion_8h.html#ad8c06ea69cfb788ebadd51bfefb3dfb0" title="MOVE_REV" alt="" coords="896,532,987,561"/>
+<area shape="rect" href="$_scout___robot_2motion_8h.html#a10cb8a1450bfb05cd9c72ad09ce7f2fe" title="motion_set" alt="" coords="1051,505,1136,535"/>
+<area shape="rect" href="$_scout___robot_2ir_8h.html#aa09e87277c2c166936627a82126aac42" title="front_dist_mm" alt="" coords="711,636,815,665"/>
+<area shape="rect" href="$_scout___robot_2whiteline_8h.html#a3aedb5aa08d1a59fd4576fc4493e411d" title="ADC_Conversion" alt="" coords="881,639,1001,668"/>
+<area shape="rect" href="$_scout___robot_2ir_8h.html#a8c2237010df302bbc5e4f63e722d4802" title="Sharp_estimation" alt="" coords="880,585,1003,615"/>
+<area shape="rect" href="$_arm___control_8h.html#a581d9af2c6c9d23ca521f637075e1bc1" title="servo_2" alt="" coords="548,272,615,301"/>
+<area shape="rect" href="$_scout___robot_2lcd_8h.html#a48b63200c8d5c8c5231031674cbb63d6" title="lcd_print" alt="" coords="547,1083,616,1112"/>
+<area shape="rect" href="$_arm___control_8h.html#a5e83e38113e61aa98a5737499e18a31b" title="servo_1" alt="" coords="548,743,615,772"/>
+<area shape="rect" href="$_worker___complete_2motion_8h.html#a3a0711f34af615c274e67a580696f9ad" title="forward_mm" alt="" coords="536,556,627,585"/>
+<area shape="rect" href="$_worker___complete_2motion_8h.html#ae79e92df10e04334f214055aa5b8c658" title="angle_rotate" alt="" coords="717,376,808,405"/>
+<area shape="rect" href="$_scout___robot_2motion_8h.html#a626849715d84e2ec7460bcd787c72089" title="MOVE_RIGHT" alt="" coords="888,479,995,508"/>
+<area shape="rect" href="$_worker___complete_2motion_8h.html#aef3c7f13796512f56db32b784ca4c651" title="LEFT_TURN_BY" alt="" coords="521,219,641,248"/>
+<area shape="rect" href="$_scout___robot_2whiteline_8h.html#a2d55adaff96e84bf99460f7c9d24f7a4" title="init_adc" alt="" coords="352,1320,419,1349"/>
+<area shape="rect" href="$_scout___robot_2buzzer_8h.html#a96d9b40042c47c0e0eb1b85feaf86ece" title="init_buzzer" alt="" coords="344,1373,427,1403"/>
+<area shape="rect" href="$_scout___robot_2lcd_8h.html#adc18a2dbca08018ef649b8e84b007412" title="init_lcd" alt="" coords="355,1427,416,1456"/>
+<area shape="rect" href="$_scout___robot_2lcd_8h.html#ac23e73124dc9fabae95671fe71d074a6" title="lcd_init" alt="" coords="355,1480,416,1509"/>
+<area shape="rect" href="$_scout___robot_2lcd_8h.html#a3f8a3732239f1ff251be98da40c120e1" title="lcd_set_4bit" alt="" coords="340,1533,431,1563"/>
+<area shape="rect" href="$_scout___robot_2motion_8h.html#a17cf811a885634d71a23e8d4a20457f0" title="motion_pin_config" alt="" coords="323,1587,448,1616"/>
+<area shape="rect" href="$_scout___robot_2whiteline_8h.html#a5c2ba800834495bb295891490cb1c760" title="port_init" alt="" coords="352,1160,419,1189"/>
+<area shape="rect" href="$_scout___robot_2motion_8h.html#a578f7cc9b705ce549aa856c927b102e8" title="timer5_init" alt="" coords="345,1213,425,1243"/>
+<area shape="rect" href="$_scout___robot_2firebird__winavr_8h.html#abbbf5055286d09a73b87f57f71dfd0b9" title="uart0_init" alt="" coords="348,1267,423,1296"/>
+<area shape="rect" href="$_scout___robot_2lcd_8h.html#afff7370014e73715ce0d31b4d994c916" title="lcd_wr_command" alt="" coords="520,1480,643,1509"/>
+</map>

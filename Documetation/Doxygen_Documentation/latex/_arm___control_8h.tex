@@ -1,0 +1,645 @@
+\hypertarget{_arm___control_8h}{
+\section{Worker\_\-Complete/Arm\_\-Control.h File Reference}
+\label{_arm___control_8h}\index{Worker\_\-Complete/Arm\_\-Control.h@{Worker\_\-Complete/Arm\_\-Control.h}}
+}
+This graph shows which files directly or indirectly include this file:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=121pt]{_arm___control_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_arm___control_8h_af87425963403c39dd2a5686722662e1b}{servo1\_\-pin\_\-config} (void)
+\item 
+void \hyperlink{_arm___control_8h_a9cbd58ccc49c66f6691fc3e8a4e06c07}{servo2\_\-pin\_\-config} (void)
+\item 
+void \hyperlink{_arm___control_8h_aea7136b3f5f3dee0bba462ad740018e0}{servo3\_\-pin\_\-config} (void)
+\item 
+void \hyperlink{_arm___control_8h_aac1304f7be045ea0a0de98f127b98507}{arm\_\-port\_\-init} (void)
+\item 
+void \hyperlink{_arm___control_8h_a968c314be24f7043eeff034ebf7c4a03}{timer1\_\-init} (void)
+\item 
+void \hyperlink{_arm___control_8h_ad914a7c3688c7a105a627002ec620956}{arm\_\-init\_\-devices} (void)
+\item 
+void \hyperlink{_arm___control_8h_a5e83e38113e61aa98a5737499e18a31b}{servo\_\-1} (unsigned char degrees)
+\item 
+void \hyperlink{_arm___control_8h_a581d9af2c6c9d23ca521f637075e1bc1}{servo\_\-2} (unsigned char degrees)
+\item 
+void \hyperlink{_arm___control_8h_a13cace908a54e6c7b6e7ff259b2b1d90}{servo\_\-3} (unsigned char degrees)
+\item 
+void \hyperlink{_arm___control_8h_a6c7ed6efeeb194c0a0c511380a31a2e5}{servo\_\-1\_\-free} (void)
+\item 
+void \hyperlink{_arm___control_8h_ada43b85d1e8c8343f99fcdaa12b71c3e}{servo\_\-2\_\-free} (void)
+\item 
+void \hyperlink{_arm___control_8h_a24305cafe8f6103e8434f56aa0df538a}{servo\_\-3\_\-free} (void)
+\item 
+void \hyperlink{_arm___control_8h_ad2b1808565325be9ef77569358971868}{CameraMiddle} ()
+\begin{DoxyCompactList}\small\item\em Function to rotate Camera to face front. \item\end{DoxyCompactList}\item 
+void \hyperlink{_arm___control_8h_ab4d1826737c5c1d7d1d34e0f3e3d7006}{CameraRight} ()
+\begin{DoxyCompactList}\small\item\em Function to rotate Camera to face Right. \item\end{DoxyCompactList}\item 
+void \hyperlink{_arm___control_8h_afb2fc70c822e01e854609938e5f05ba5}{CameraLeft} ()
+\begin{DoxyCompactList}\small\item\em Function to rotate Camera to face left. \item\end{DoxyCompactList}\item 
+void \hyperlink{_arm___control_8h_a64ae6c440a4ed9892bdde8c4ae8de660}{Lift} (float Height)
+\item 
+void \hyperlink{_arm___control_8h_a2916657630de9105936250904d7611a7}{Lower} ()
+\begin{DoxyCompactList}\small\item\em Function to lower the arm gripper to position 0. \item\end{DoxyCompactList}\item 
+void \hyperlink{_arm___control_8h_a8f50362140c38ff47031e158a04540a5}{Grab} ()
+\begin{DoxyCompactList}\small\item\em Function to grab object with the grabber. You can modify the values of grabberClose to specifie the size of the object. \item\end{DoxyCompactList}\item 
+void \hyperlink{_arm___control_8h_a94c93747c8daa99d65c2a04c6be0748c}{Release} ()
+\begin{DoxyCompactList}\small\item\em Function to release object from the grabber. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+unsigned const int \hyperlink{_arm___control_8h_a7b0e4ac419cd5d40e75263eb22d969b9}{cameraMiddle} = 82
+\item 
+unsigned const int \hyperlink{_arm___control_8h_a707eca9a673d05eaa3469519cdd9dbe4}{cameraRight} = 0
+\item 
+unsigned const int \hyperlink{_arm___control_8h_a5a79341dfb23288f6e6e99c26925d460}{cameraLeft} = 168
+\item 
+unsigned const int \hyperlink{_arm___control_8h_a45481eda243d2b2c954f4a98fcd9392e}{maxDegree} = 0
+\item 
+unsigned const int \hyperlink{_arm___control_8h_aa2a5b33f07b8925a6cbb021279d69e24}{minDegree} = 150
+\item 
+unsigned int \hyperlink{_arm___control_8h_aabd7998afd3a355b80154a32a0e12ffc}{currentDegree} = 150
+\item 
+unsigned const int \hyperlink{_arm___control_8h_a0ff0bf4c75327fe9549b2e272c7a23eb}{grabberOpen} = 180
+\item 
+unsigned const int \hyperlink{_arm___control_8h_ad36dbdd5856508650eb0c82c96ddf539}{grabberClose} = 122
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_arm___control_8h_ad914a7c3688c7a105a627002ec620956}{
+\index{Arm\_\-Control.h@{Arm\_\-Control.h}!arm\_\-init\_\-devices@{arm\_\-init\_\-devices}}
+\index{arm\_\-init\_\-devices@{arm\_\-init\_\-devices}!Arm_Control.h@{Arm\_\-Control.h}}
+\subsubsection[{arm\_\-init\_\-devices}]{\setlength{\rightskip}{0pt plus 5cm}void arm\_\-init\_\-devices (void)}}
+\label{_arm___control_8h_ad914a7c3688c7a105a627002ec620956}
+
+
+Definition at line 123 of file Arm\_\-Control.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{_arm___control_8h_ad914a7c3688c7a105a627002ec620956_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=119pt]{_arm___control_8h_ad914a7c3688c7a105a627002ec620956_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_arm___control_8h_aac1304f7be045ea0a0de98f127b98507}{
+\index{Arm\_\-Control.h@{Arm\_\-Control.h}!arm\_\-port\_\-init@{arm\_\-port\_\-init}}
+\index{arm\_\-port\_\-init@{arm\_\-port\_\-init}!Arm_Control.h@{Arm\_\-Control.h}}
+\subsubsection[{arm\_\-port\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}void arm\_\-port\_\-init (void)}}
+\label{_arm___control_8h_aac1304f7be045ea0a0de98f127b98507}
+
+
+Definition at line 90 of file Arm\_\-Control.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=124pt]{_arm___control_8h_aac1304f7be045ea0a0de98f127b98507_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{_arm___control_8h_aac1304f7be045ea0a0de98f127b98507_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_arm___control_8h_afb2fc70c822e01e854609938e5f05ba5}{
+\index{Arm\_\-Control.h@{Arm\_\-Control.h}!CameraLeft@{CameraLeft}}
+\index{CameraLeft@{CameraLeft}!Arm_Control.h@{Arm\_\-Control.h}}
+\subsubsection[{CameraLeft}]{\setlength{\rightskip}{0pt plus 5cm}void CameraLeft ()}}
+\label{_arm___control_8h_afb2fc70c822e01e854609938e5f05ba5}
+
+
+Function to rotate Camera to face left. 
+
+
+
+Definition at line 198 of file Arm\_\-Control.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=99pt]{_arm___control_8h_afb2fc70c822e01e854609938e5f05ba5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_arm___control_8h_ad2b1808565325be9ef77569358971868}{
+\index{Arm\_\-Control.h@{Arm\_\-Control.h}!CameraMiddle@{CameraMiddle}}
+\index{CameraMiddle@{CameraMiddle}!Arm_Control.h@{Arm\_\-Control.h}}
+\subsubsection[{CameraMiddle}]{\setlength{\rightskip}{0pt plus 5cm}void CameraMiddle ()}}
+\label{_arm___control_8h_ad2b1808565325be9ef77569358971868}
+
+
+Function to rotate Camera to face front. 
+
+
+
+Definition at line 183 of file Arm\_\-Control.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=105pt]{_arm___control_8h_ad2b1808565325be9ef77569358971868_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{_arm___control_8h_ad2b1808565325be9ef77569358971868_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_arm___control_8h_ab4d1826737c5c1d7d1d34e0f3e3d7006}{
+\index{Arm\_\-Control.h@{Arm\_\-Control.h}!CameraRight@{CameraRight}}
+\index{CameraRight@{CameraRight}!Arm_Control.h@{Arm\_\-Control.h}}
+\subsubsection[{CameraRight}]{\setlength{\rightskip}{0pt plus 5cm}void CameraRight ()}}
+\label{_arm___control_8h_ab4d1826737c5c1d7d1d34e0f3e3d7006}
+
+
+Function to rotate Camera to face Right. 
+
+
+
+Definition at line 190 of file Arm\_\-Control.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=102pt]{_arm___control_8h_ab4d1826737c5c1d7d1d34e0f3e3d7006_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{_arm___control_8h_ab4d1826737c5c1d7d1d34e0f3e3d7006_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_arm___control_8h_a8f50362140c38ff47031e158a04540a5}{
+\index{Arm\_\-Control.h@{Arm\_\-Control.h}!Grab@{Grab}}
+\index{Grab@{Grab}!Arm_Control.h@{Arm\_\-Control.h}}
+\subsubsection[{Grab}]{\setlength{\rightskip}{0pt plus 5cm}void Grab ()}}
+\label{_arm___control_8h_a8f50362140c38ff47031e158a04540a5}
+
+
+Function to grab object with the grabber. You can modify the values of grabberClose to specifie the size of the object. 
+
+
+
+Definition at line 240 of file Arm\_\-Control.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=85pt]{_arm___control_8h_a8f50362140c38ff47031e158a04540a5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=129pt]{_arm___control_8h_a8f50362140c38ff47031e158a04540a5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_arm___control_8h_a64ae6c440a4ed9892bdde8c4ae8de660}{
+\index{Arm\_\-Control.h@{Arm\_\-Control.h}!Lift@{Lift}}
+\index{Lift@{Lift}!Arm_Control.h@{Arm\_\-Control.h}}
+\subsubsection[{Lift}]{\setlength{\rightskip}{0pt plus 5cm}void Lift (float {\em Height})}}
+\label{_arm___control_8h_a64ae6c440a4ed9892bdde8c4ae8de660}
+Function to lift the arm gripper to the specified height. Height -\/ should be in mm and between 0 -\/ 90mm. 
+
+Definition at line 207 of file Arm\_\-Control.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=81pt]{_arm___control_8h_a64ae6c440a4ed9892bdde8c4ae8de660_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=125pt]{_arm___control_8h_a64ae6c440a4ed9892bdde8c4ae8de660_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_arm___control_8h_a2916657630de9105936250904d7611a7}{
+\index{Arm\_\-Control.h@{Arm\_\-Control.h}!Lower@{Lower}}
+\index{Lower@{Lower}!Arm_Control.h@{Arm\_\-Control.h}}
+\subsubsection[{Lower}]{\setlength{\rightskip}{0pt plus 5cm}void Lower ()}}
+\label{_arm___control_8h_a2916657630de9105936250904d7611a7}
+
+
+Function to lower the arm gripper to position 0. 
+
+
+
+Definition at line 228 of file Arm\_\-Control.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=87pt]{_arm___control_8h_a2916657630de9105936250904d7611a7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=131pt]{_arm___control_8h_a2916657630de9105936250904d7611a7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_arm___control_8h_a94c93747c8daa99d65c2a04c6be0748c}{
+\index{Arm\_\-Control.h@{Arm\_\-Control.h}!Release@{Release}}
+\index{Release@{Release}!Arm_Control.h@{Arm\_\-Control.h}}
+\subsubsection[{Release}]{\setlength{\rightskip}{0pt plus 5cm}void Release ()}}
+\label{_arm___control_8h_a94c93747c8daa99d65c2a04c6be0748c}
+
+
+Function to release object from the grabber. 
+
+
+
+Definition at line 251 of file Arm\_\-Control.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=92pt]{_arm___control_8h_a94c93747c8daa99d65c2a04c6be0748c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{_arm___control_8h_a94c93747c8daa99d65c2a04c6be0748c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_arm___control_8h_af87425963403c39dd2a5686722662e1b}{
+\index{Arm\_\-Control.h@{Arm\_\-Control.h}!servo1\_\-pin\_\-config@{servo1\_\-pin\_\-config}}
+\index{servo1\_\-pin\_\-config@{servo1\_\-pin\_\-config}!Arm_Control.h@{Arm\_\-Control.h}}
+\subsubsection[{servo1\_\-pin\_\-config}]{\setlength{\rightskip}{0pt plus 5cm}void servo1\_\-pin\_\-config (void)}}
+\label{_arm___control_8h_af87425963403c39dd2a5686722662e1b}
+
+
+Definition at line 69 of file Arm\_\-Control.h.
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{_arm___control_8h_af87425963403c39dd2a5686722662e1b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_arm___control_8h_a9cbd58ccc49c66f6691fc3e8a4e06c07}{
+\index{Arm\_\-Control.h@{Arm\_\-Control.h}!servo2\_\-pin\_\-config@{servo2\_\-pin\_\-config}}
+\index{servo2\_\-pin\_\-config@{servo2\_\-pin\_\-config}!Arm_Control.h@{Arm\_\-Control.h}}
+\subsubsection[{servo2\_\-pin\_\-config}]{\setlength{\rightskip}{0pt plus 5cm}void servo2\_\-pin\_\-config (void)}}
+\label{_arm___control_8h_a9cbd58ccc49c66f6691fc3e8a4e06c07}
+
+
+Definition at line 76 of file Arm\_\-Control.h.
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{_arm___control_8h_a9cbd58ccc49c66f6691fc3e8a4e06c07_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_arm___control_8h_aea7136b3f5f3dee0bba462ad740018e0}{
+\index{Arm\_\-Control.h@{Arm\_\-Control.h}!servo3\_\-pin\_\-config@{servo3\_\-pin\_\-config}}
+\index{servo3\_\-pin\_\-config@{servo3\_\-pin\_\-config}!Arm_Control.h@{Arm\_\-Control.h}}
+\subsubsection[{servo3\_\-pin\_\-config}]{\setlength{\rightskip}{0pt plus 5cm}void servo3\_\-pin\_\-config (void)}}
+\label{_arm___control_8h_aea7136b3f5f3dee0bba462ad740018e0}
+
+
+Definition at line 83 of file Arm\_\-Control.h.
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{_arm___control_8h_aea7136b3f5f3dee0bba462ad740018e0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_arm___control_8h_a5e83e38113e61aa98a5737499e18a31b}{
+\index{Arm\_\-Control.h@{Arm\_\-Control.h}!servo\_\-1@{servo\_\-1}}
+\index{servo\_\-1@{servo\_\-1}!Arm_Control.h@{Arm\_\-Control.h}}
+\subsubsection[{servo\_\-1}]{\setlength{\rightskip}{0pt plus 5cm}void servo\_\-1 (unsigned char {\em degrees})}}
+\label{_arm___control_8h_a5e83e38113e61aa98a5737499e18a31b}
+
+
+Definition at line 133 of file Arm\_\-Control.h.
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{_arm___control_8h_a5e83e38113e61aa98a5737499e18a31b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_arm___control_8h_a6c7ed6efeeb194c0a0c511380a31a2e5}{
+\index{Arm\_\-Control.h@{Arm\_\-Control.h}!servo\_\-1\_\-free@{servo\_\-1\_\-free}}
+\index{servo\_\-1\_\-free@{servo\_\-1\_\-free}!Arm_Control.h@{Arm\_\-Control.h}}
+\subsubsection[{servo\_\-1\_\-free}]{\setlength{\rightskip}{0pt plus 5cm}void servo\_\-1\_\-free (void)}}
+\label{_arm___control_8h_a6c7ed6efeeb194c0a0c511380a31a2e5}
+
+
+Definition at line 164 of file Arm\_\-Control.h.
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{_arm___control_8h_a6c7ed6efeeb194c0a0c511380a31a2e5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_arm___control_8h_a581d9af2c6c9d23ca521f637075e1bc1}{
+\index{Arm\_\-Control.h@{Arm\_\-Control.h}!servo\_\-2@{servo\_\-2}}
+\index{servo\_\-2@{servo\_\-2}!Arm_Control.h@{Arm\_\-Control.h}}
+\subsubsection[{servo\_\-2}]{\setlength{\rightskip}{0pt plus 5cm}void servo\_\-2 (unsigned char {\em degrees})}}
+\label{_arm___control_8h_a581d9af2c6c9d23ca521f637075e1bc1}
+
+
+Definition at line 143 of file Arm\_\-Control.h.
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{_arm___control_8h_a581d9af2c6c9d23ca521f637075e1bc1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_arm___control_8h_ada43b85d1e8c8343f99fcdaa12b71c3e}{
+\index{Arm\_\-Control.h@{Arm\_\-Control.h}!servo\_\-2\_\-free@{servo\_\-2\_\-free}}
+\index{servo\_\-2\_\-free@{servo\_\-2\_\-free}!Arm_Control.h@{Arm\_\-Control.h}}
+\subsubsection[{servo\_\-2\_\-free}]{\setlength{\rightskip}{0pt plus 5cm}void servo\_\-2\_\-free (void)}}
+\label{_arm___control_8h_ada43b85d1e8c8343f99fcdaa12b71c3e}
+
+
+Definition at line 170 of file Arm\_\-Control.h.
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{_arm___control_8h_ada43b85d1e8c8343f99fcdaa12b71c3e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_arm___control_8h_a13cace908a54e6c7b6e7ff259b2b1d90}{
+\index{Arm\_\-Control.h@{Arm\_\-Control.h}!servo\_\-3@{servo\_\-3}}
+\index{servo\_\-3@{servo\_\-3}!Arm_Control.h@{Arm\_\-Control.h}}
+\subsubsection[{servo\_\-3}]{\setlength{\rightskip}{0pt plus 5cm}void servo\_\-3 (unsigned char {\em degrees})}}
+\label{_arm___control_8h_a13cace908a54e6c7b6e7ff259b2b1d90}
+
+
+Definition at line 152 of file Arm\_\-Control.h.
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{_arm___control_8h_a13cace908a54e6c7b6e7ff259b2b1d90_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_arm___control_8h_a24305cafe8f6103e8434f56aa0df538a}{
+\index{Arm\_\-Control.h@{Arm\_\-Control.h}!servo\_\-3\_\-free@{servo\_\-3\_\-free}}
+\index{servo\_\-3\_\-free@{servo\_\-3\_\-free}!Arm_Control.h@{Arm\_\-Control.h}}
+\subsubsection[{servo\_\-3\_\-free}]{\setlength{\rightskip}{0pt plus 5cm}void servo\_\-3\_\-free (void)}}
+\label{_arm___control_8h_a24305cafe8f6103e8434f56aa0df538a}
+
+
+Definition at line 176 of file Arm\_\-Control.h.
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{_arm___control_8h_a24305cafe8f6103e8434f56aa0df538a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_arm___control_8h_a968c314be24f7043eeff034ebf7c4a03}{
+\index{Arm\_\-Control.h@{Arm\_\-Control.h}!timer1\_\-init@{timer1\_\-init}}
+\index{timer1\_\-init@{timer1\_\-init}!Arm_Control.h@{Arm\_\-Control.h}}
+\subsubsection[{timer1\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}void timer1\_\-init (void)}}
+\label{_arm___control_8h_a968c314be24f7043eeff034ebf7c4a03}
+
+
+Output compare eegister high value for servo 3 
+
+
+
+Definition at line 101 of file Arm\_\-Control.h.
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{_arm___control_8h_a968c314be24f7043eeff034ebf7c4a03_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{_arm___control_8h_a5a79341dfb23288f6e6e99c26925d460}{
+\index{Arm\_\-Control.h@{Arm\_\-Control.h}!cameraLeft@{cameraLeft}}
+\index{cameraLeft@{cameraLeft}!Arm_Control.h@{Arm\_\-Control.h}}
+\subsubsection[{cameraLeft}]{\setlength{\rightskip}{0pt plus 5cm}unsigned const int {\bf cameraLeft} = 168}}
+\label{_arm___control_8h_a5a79341dfb23288f6e6e99c26925d460}
+
+
+Definition at line 54 of file Arm\_\-Control.h.
+
+\hypertarget{_arm___control_8h_a7b0e4ac419cd5d40e75263eb22d969b9}{
+\index{Arm\_\-Control.h@{Arm\_\-Control.h}!cameraMiddle@{cameraMiddle}}
+\index{cameraMiddle@{cameraMiddle}!Arm_Control.h@{Arm\_\-Control.h}}
+\subsubsection[{cameraMiddle}]{\setlength{\rightskip}{0pt plus 5cm}unsigned const int {\bf cameraMiddle} = 82}}
+\label{_arm___control_8h_a7b0e4ac419cd5d40e75263eb22d969b9}
+
+
+Definition at line 52 of file Arm\_\-Control.h.
+
+\hypertarget{_arm___control_8h_a707eca9a673d05eaa3469519cdd9dbe4}{
+\index{Arm\_\-Control.h@{Arm\_\-Control.h}!cameraRight@{cameraRight}}
+\index{cameraRight@{cameraRight}!Arm_Control.h@{Arm\_\-Control.h}}
+\subsubsection[{cameraRight}]{\setlength{\rightskip}{0pt plus 5cm}unsigned const int {\bf cameraRight} = 0}}
+\label{_arm___control_8h_a707eca9a673d05eaa3469519cdd9dbe4}
+
+
+Definition at line 53 of file Arm\_\-Control.h.
+
+\hypertarget{_arm___control_8h_aabd7998afd3a355b80154a32a0e12ffc}{
+\index{Arm\_\-Control.h@{Arm\_\-Control.h}!currentDegree@{currentDegree}}
+\index{currentDegree@{currentDegree}!Arm_Control.h@{Arm\_\-Control.h}}
+\subsubsection[{currentDegree}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf currentDegree} = 150}}
+\label{_arm___control_8h_aabd7998afd3a355b80154a32a0e12ffc}
+
+
+Definition at line 59 of file Arm\_\-Control.h.
+
+\hypertarget{_arm___control_8h_ad36dbdd5856508650eb0c82c96ddf539}{
+\index{Arm\_\-Control.h@{Arm\_\-Control.h}!grabberClose@{grabberClose}}
+\index{grabberClose@{grabberClose}!Arm_Control.h@{Arm\_\-Control.h}}
+\subsubsection[{grabberClose}]{\setlength{\rightskip}{0pt plus 5cm}unsigned const int {\bf grabberClose} = 122}}
+\label{_arm___control_8h_ad36dbdd5856508650eb0c82c96ddf539}
+
+
+Definition at line 65 of file Arm\_\-Control.h.
+
+\hypertarget{_arm___control_8h_a0ff0bf4c75327fe9549b2e272c7a23eb}{
+\index{Arm\_\-Control.h@{Arm\_\-Control.h}!grabberOpen@{grabberOpen}}
+\index{grabberOpen@{grabberOpen}!Arm_Control.h@{Arm\_\-Control.h}}
+\subsubsection[{grabberOpen}]{\setlength{\rightskip}{0pt plus 5cm}unsigned const int {\bf grabberOpen} = 180}}
+\label{_arm___control_8h_a0ff0bf4c75327fe9549b2e272c7a23eb}
+
+
+Definition at line 64 of file Arm\_\-Control.h.
+
+\hypertarget{_arm___control_8h_a45481eda243d2b2c954f4a98fcd9392e}{
+\index{Arm\_\-Control.h@{Arm\_\-Control.h}!maxDegree@{maxDegree}}
+\index{maxDegree@{maxDegree}!Arm_Control.h@{Arm\_\-Control.h}}
+\subsubsection[{maxDegree}]{\setlength{\rightskip}{0pt plus 5cm}unsigned const int {\bf maxDegree} = 0}}
+\label{_arm___control_8h_a45481eda243d2b2c954f4a98fcd9392e}
+
+
+Definition at line 57 of file Arm\_\-Control.h.
+
+\hypertarget{_arm___control_8h_aa2a5b33f07b8925a6cbb021279d69e24}{
+\index{Arm\_\-Control.h@{Arm\_\-Control.h}!minDegree@{minDegree}}
+\index{minDegree@{minDegree}!Arm_Control.h@{Arm\_\-Control.h}}
+\subsubsection[{minDegree}]{\setlength{\rightskip}{0pt plus 5cm}unsigned const int {\bf minDegree} = 150}}
+\label{_arm___control_8h_aa2a5b33f07b8925a6cbb021279d69e24}
+
+
+Definition at line 58 of file Arm\_\-Control.h.
+

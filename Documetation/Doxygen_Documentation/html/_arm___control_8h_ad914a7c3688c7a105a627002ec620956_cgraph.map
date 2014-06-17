@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" href="$_arm___control_8h.html#aac1304f7be045ea0a0de98f127b98507" title="arm_port_init" alt="" coords="173,59,269,88"/>
+<area shape="rect" href="$_arm___control_8h.html#a968c314be24f7043eeff034ebf7c4a03" title="timer1_init" alt="" coords="181,112,261,141"/>
+<area shape="rect" href="$_arm___control_8h.html#af87425963403c39dd2a5686722662e1b" title="servo1_pin_config" alt="" coords="319,5,444,35"/>
+<area shape="rect" href="$_arm___control_8h.html#a9cbd58ccc49c66f6691fc3e8a4e06c07" title="servo2_pin_config" alt="" coords="319,59,444,88"/>
+<area shape="rect" href="$_arm___control_8h.html#aea7136b3f5f3dee0bba462ad740018e0" title="servo3_pin_config" alt="" coords="319,112,444,141"/>
+</map>

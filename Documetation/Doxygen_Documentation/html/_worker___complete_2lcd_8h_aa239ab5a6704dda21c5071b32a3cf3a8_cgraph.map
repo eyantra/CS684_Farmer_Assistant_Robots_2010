@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="$_worker___complete_2motion_8h.html#ae20e0ac384c729be97c963cb470456a9" title="left_encoder_pin_config" alt="" coords="132,5,289,35"/>
+<area shape="rect" href="$_scout___robot_2motion_8h.html#a17cf811a885634d71a23e8d4a20457f0" title="motion_pin_config" alt="" coords="148,59,273,88"/>
+<area shape="rect" href="$_worker___complete_2motion_8h.html#a0db68d18b578ab9e12bc1d80915ef0d7" title="right_encoder_pin_config" alt="" coords="128,112,293,141"/>
+</map>

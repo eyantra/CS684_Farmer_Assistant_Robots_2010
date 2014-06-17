@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="$_worker___complete_8c.html#a0c9df54dbd6d34b2f4148de0c3de923b" title="Moves the worker Robot towards the object to be collected depending on how far the..." alt="" coords="147,5,235,35"/>
+<area shape="rect" href="$_worker___complete_8c.html#a744180995c9d3d93c82f9314d9f1fbbe" title="Once the worker robot reaches the specifed location where the object was detected..." alt="" coords="284,5,369,35"/>
+<area shape="rect" href="$_worker___complete_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667" title="Execution begin here." alt="" coords="420,5,468,35"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="$_worker___complete_8c.html#a744180995c9d3d93c82f9314d9f1fbbe" title="Once the worker robot reaches the specifed location where the object was detected..." alt="" coords="156,5,241,35"/>
+<area shape="rect" href="$_worker___complete_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667" title="Execution begin here." alt="" coords="292,32,340,61"/>
+<area shape="rect" href="$_line_follower_counter_8c.html#ab5f8e79f6ffa3be348924e573e8dcfd1" title="ISR for receive complete interrupt." alt="" coords="164,109,233,139"/>
+</map>

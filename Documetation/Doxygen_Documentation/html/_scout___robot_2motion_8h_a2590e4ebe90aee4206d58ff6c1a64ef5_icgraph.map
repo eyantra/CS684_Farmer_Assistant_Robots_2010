@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" href="$_worker___complete_2motion_8h.html#a3a0711f34af615c274e67a580696f9ad" title="forward_mm" alt="" coords="151,5,241,35"/>
+<area shape="rect" href="$_line_follower_counter_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667" title="Moves the scout robot to scan the field." alt="" coords="172,59,220,88"/>
+<area shape="rect" href="$_worker___complete_8c.html#a0c9df54dbd6d34b2f4148de0c3de923b" title="Moves the worker Robot towards the object to be collected depending on how far the..." alt="" coords="291,5,379,35"/>
+<area shape="rect" href="$_worker___complete_8c.html#a744180995c9d3d93c82f9314d9f1fbbe" title="Once the worker robot reaches the specifed location where the object was detected..." alt="" coords="428,5,513,35"/>
+<area shape="rect" href="$_worker___complete_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667" title="Execution begin here." alt="" coords="564,5,612,35"/>
+</map>

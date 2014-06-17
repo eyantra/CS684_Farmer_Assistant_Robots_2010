@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" href="$_scout___robot_2lcd_8h.html#ad8006d544921c9533806fdc898c75112" title="lcd_cursor" alt="" coords="177,5,257,35"/>
+<area shape="rect" href="$_scout___robot_2lcd_8h.html#a60675105b93bba6762aaab88d732365a" title="lcd_home" alt="" coords="179,59,256,88"/>
+<area shape="rect" href="$_scout___robot_2lcd_8h.html#ac23e73124dc9fabae95671fe71d074a6" title="lcd_init" alt="" coords="187,112,248,141"/>
+<area shape="rect" href="$_scout___robot_2lcd_8h.html#a48b63200c8d5c8c5231031674cbb63d6" title="lcd_print" alt="" coords="317,33,387,63"/>
+<area shape="rect" href="$_scout___robot_2lcd_8h.html#ad338066e1bb54461c273b872652bd5b9" title="LCD_DISPLAY_INT_1" alt="" coords="445,60,595,89"/>
+<area shape="rect" href="$_scout___robot_2lcd_8h.html#a71edb5dcd2805c0f4fc1526910d44136" title="LCD_DISPLAY_INT_2" alt="" coords="445,7,595,36"/>
+<area shape="rect" href="$_line_follower_counter_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667" title="Moves the scout robot to scan the field." alt="" coords="663,60,711,89"/>
+<area shape="rect" href="$_worker___complete_8c.html#a744180995c9d3d93c82f9314d9f1fbbe" title="Once the worker robot reaches the specifed location where the object was detected..." alt="" coords="644,7,729,36"/>
+<area shape="rect" href="$_worker___complete_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667" title="Execution begin here." alt="" coords="780,7,828,36"/>
+<area shape="rect" href="$_scout___robot_2firebird__winavr_8h.html#ab01199c927ceda6f9520c7afb0f1b099" title="init_devices" alt="" coords="307,112,397,141"/>
+</map>

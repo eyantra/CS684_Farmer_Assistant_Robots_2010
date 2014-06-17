@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" href="$_arm___control_8h.html#a8f50362140c38ff47031e158a04540a5" title="Function to grab object with the grabber. You can modify the values of grabberClose..." alt="" coords="133,5,181,35"/>
+<area shape="rect" href="$_arm___control_8h.html#a94c93747c8daa99d65c2a04c6be0748c" title="Function to release object from the grabber." alt="" coords="124,59,191,88"/>
+<area shape="rect" href="$_worker___complete_8c.html#a744180995c9d3d93c82f9314d9f1fbbe" title="Once the worker robot reaches the specifed location where the object was detected..." alt="" coords="241,32,327,61"/>
+<area shape="rect" href="$_worker___complete_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667" title="Execution begin here." alt="" coords="377,32,425,61"/>
+</map>

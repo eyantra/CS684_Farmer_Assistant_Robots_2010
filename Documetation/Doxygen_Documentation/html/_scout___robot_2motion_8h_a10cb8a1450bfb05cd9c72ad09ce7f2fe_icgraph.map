@@ -1,0 +1,23 @@
+<map id="G" name="G">
+<area shape="rect" href="$_scout___robot_2motion_8h.html#a2590e4ebe90aee4206d58ff6c1a64ef5" title="MOVE_FWD" alt="" coords="175,55,271,84"/>
+<area shape="rect" href="$_scout___robot_2motion_8h.html#a1bfa384685cd0f2882f2aa4befb5011a" title="MOVE_INPLACE_LEFT" alt="" coords="143,108,303,137"/>
+<area shape="rect" href="$_scout___robot_2motion_8h.html#a0bfd486466153ad4acc52cd8c2b266dd" title="MOVE_INPLACE_RIGHT" alt="" coords="139,161,307,191"/>
+<area shape="rect" href="$_scout___robot_2motion_8h.html#afd305b0fd36b6347d052bcf30e45e421" title="MOVE_LEFT" alt="" coords="375,421,473,451"/>
+<area shape="rect" href="$_scout___robot_2motion_8h.html#ad8c06ea69cfb788ebadd51bfefb3dfb0" title="MOVE_REV" alt="" coords="379,109,469,139"/>
+<area shape="rect" href="$_scout___robot_2motion_8h.html#a626849715d84e2ec7460bcd787c72089" title="MOVE_RIGHT" alt="" coords="371,475,477,504"/>
+<area shape="rect" href="$_scout___robot_2motion_8h.html#aaf8fc6b7fbccf34af2c35ad5c276435f" title="MOVE_SOFT_LEFT" alt="" coords="153,369,292,399"/>
+<area shape="rect" href="$_scout___robot_2motion_8h.html#a1756a1df57a60fda3a4156506f857f7a" title="MOVE_SOFT_RIGHT" alt="" coords="149,423,296,452"/>
+<area shape="rect" href="$_scout___robot_2motion_8h.html#a94ac7b12f6316deea91243b154b7abb4" title="STOP" alt="" coords="195,265,251,295"/>
+<area shape="rect" href="$_worker___complete_2motion_8h.html#a3a0711f34af615c274e67a580696f9ad" title="forward_mm" alt="" coords="560,59,651,88"/>
+<area shape="rect" href="$_line_follower_counter_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667" title="Moves the scout robot to scan the field." alt="" coords="400,5,448,35"/>
+<area shape="rect" href="$_worker___complete_8c.html#a0c9df54dbd6d34b2f4148de0c3de923b" title="Moves the worker Robot towards the object to be collected depending on how far the..." alt="" coords="717,59,805,88"/>
+<area shape="rect" href="$_worker___complete_8c.html#a744180995c9d3d93c82f9314d9f1fbbe" title="Once the worker robot reaches the specifed location where the object was detected..." alt="" coords="855,215,940,244"/>
+<area shape="rect" href="$_worker___complete_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667" title="Execution begin here." alt="" coords="991,215,1039,244"/>
+<area shape="rect" href="$_worker___complete_2motion_8h.html#aef3c7f13796512f56db32b784ca4c651" title="LEFT_TURN_BY" alt="" coords="545,285,665,315"/>
+<area shape="rect" href="$_worker___complete_8c.html#a32c4d0c2e2411ca3237d45985abdcaf7" title="This function is used to rotate the robot back to the white line." alt="" coords="721,279,801,308"/>
+<area shape="rect" href="$_worker___complete_2motion_8h.html#a211524abdbae5dd0a77807b843ec60c7" title="back_mm" alt="" coords="567,137,644,167"/>
+<area shape="rect" href="$_worker___complete_8c.html#aead7681c698f81d34a9ee6d6e0c57482" title="After grabbing the object move the robot backward by the distance specified." alt="" coords="717,112,805,141"/>
+<area shape="rect" href="$_worker___complete_2motion_8h.html#ac66d8febdb0927d499eb451e211ec6db" title="RIGHT_TURN_BY" alt="" coords="541,363,669,392"/>
+<area shape="rect" href="$_worker___complete_2motion_8h.html#ae79e92df10e04334f214055aa5b8c658" title="angle_rotate" alt="" coords="379,317,469,347"/>
+<area shape="rect" href="$_worker___complete_2motion_8h.html#afc027345bdb5eb901ff0d7aa5ffa7306" title="linear_distance_mm" alt="" coords="356,163,492,192"/>
+</map>

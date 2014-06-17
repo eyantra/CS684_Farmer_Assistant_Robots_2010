@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" href="$_scout___robot_2firebird__winavr_8h.html#ab01199c927ceda6f9520c7afb0f1b099" title="init_devices" alt="" coords="147,5,237,35"/>
+<area shape="rect" href="$_line_follower_counter_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667" title="Moves the scout robot to scan the field." alt="" coords="287,5,335,35"/>
+</map>

@@ -1,0 +1,546 @@
+\hypertarget{_scout___robot_2lcd_8h}{
+\section{Scout\_\-Robot/lcd.h File Reference}
+\label{_scout___robot_2lcd_8h}\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_scout___robot_2lcd_8h_a9d4ad5467cb8a39312513dfaaf4d950a}{FCPU}~11059200ul
+\item 
+\#define \hyperlink{_scout___robot_2lcd_8h_af8903d8eea3868940c60af887473b152}{RS}~0
+\item 
+\#define \hyperlink{_scout___robot_2lcd_8h_afc4ded33ac0ca43defcce639e965748a}{RW}~1
+\item 
+\#define \hyperlink{_scout___robot_2lcd_8h_a22e6626f2c98ed902f8ded47f6438c05}{EN}~2
+\item 
+\#define \hyperlink{_scout___robot_2lcd_8h_ab44cc79afa2e158e5173a42d0bdd01b0}{lcd\_\-port}~PORTC
+\item 
+\#define \hyperlink{_scout___robot_2lcd_8h_a0e1a587a6bb537fb5e9c836231291df4}{sbit}(reg, bit)~reg $|$= (1$<$$<$bit)
+\item 
+\#define \hyperlink{_scout___robot_2lcd_8h_aad24a3ffd9b61c778f99521f717864a9}{cbit}(reg, bit)~reg \&= $\sim$(1$<$$<$bit)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_scout___robot_2lcd_8h_aa239ab5a6704dda21c5071b32a3cf3a8}{init\_\-ports} ()
+\item 
+void \hyperlink{_scout___robot_2lcd_8h_a8cb7183ba3f64a4c678db00589de269f}{lcd\_\-reset\_\-4bit} ()
+\item 
+void \hyperlink{_scout___robot_2lcd_8h_ac23e73124dc9fabae95671fe71d074a6}{lcd\_\-init} ()
+\item 
+void \hyperlink{_scout___robot_2lcd_8h_afff7370014e73715ce0d31b4d994c916}{lcd\_\-wr\_\-command} (unsigned char)
+\item 
+void \hyperlink{_scout___robot_2lcd_8h_a02b47802a409ab525f2fda28140150b0}{lcd\_\-wr\_\-char} (char)
+\item 
+void \hyperlink{_scout___robot_2lcd_8h_a60675105b93bba6762aaab88d732365a}{lcd\_\-home} ()
+\item 
+void \hyperlink{_scout___robot_2lcd_8h_ad8006d544921c9533806fdc898c75112}{lcd\_\-cursor} (char, char)
+\item 
+void \hyperlink{_scout___robot_2lcd_8h_a48b63200c8d5c8c5231031674cbb63d6}{lcd\_\-print} (char, char, unsigned int, int)
+\item 
+void \hyperlink{_scout___robot_2lcd_8h_a1eeb0747ef56e3dab0a64e7688b3ff65}{lcd\_\-string} (char $\ast$)
+\item 
+void \hyperlink{_scout___robot_2lcd_8h_adc18a2dbca08018ef649b8e84b007412}{init\_\-lcd} ()
+\item 
+void \hyperlink{_scout___robot_2lcd_8h_a3f8a3732239f1ff251be98da40c120e1}{lcd\_\-set\_\-4bit} ()
+\item 
+void \hyperlink{_scout___robot_2lcd_8h_ad338066e1bb54461c273b872652bd5b9}{LCD\_\-DISPLAY\_\-INT\_\-1} (int val)
+\item 
+void \hyperlink{_scout___robot_2lcd_8h_aa8a9a8836962d890b4939c112fd29190}{reverse} (char s\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{_scout___robot_2lcd_8h_a8b4c38b8eab16fc264fa942c765e5634}{itoa1} (int n, char s\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{_scout___robot_2lcd_8h_a71edb5dcd2805c0f4fc1526910d44136}{LCD\_\-DISPLAY\_\-INT\_\-2} (int val)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{_scout___robot_2lcd_8h_a13006074294a071b6c7a268a498f77f7}{temp}
+\item 
+unsigned int \hyperlink{_scout___robot_2lcd_8h_a09cef70e6322053ea80ae603446346c5}{unit}
+\item 
+unsigned int \hyperlink{_scout___robot_2lcd_8h_ab84b805352ca4b7ecfc9601ddab528bc}{tens}
+\item 
+unsigned int \hyperlink{_scout___robot_2lcd_8h_a913b0b4b2d4fd1ccc45534741d386cc8}{hundred}
+\item 
+unsigned int \hyperlink{_scout___robot_2lcd_8h_aa790b5f78a8f90d800d64c46c3e40205}{thousand}
+\item 
+unsigned int \hyperlink{_scout___robot_2lcd_8h_ae98244497f01cb51c50a6a1d18642b71}{million}
+\item 
+int \hyperlink{_scout___robot_2lcd_8h_acb559820d9ca11295b4500f179ef6392}{i}
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{_scout___robot_2lcd_8h_aad24a3ffd9b61c778f99521f717864a9}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!cbit@{cbit}}
+\index{cbit@{cbit}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{cbit}]{\setlength{\rightskip}{0pt plus 5cm}\#define cbit(reg, \/  bit)~reg \&= $\sim$(1$<$$<$bit)}}
+\label{_scout___robot_2lcd_8h_aad24a3ffd9b61c778f99521f717864a9}
+
+
+Definition at line 64 of file lcd.h.
+
+\hypertarget{_scout___robot_2lcd_8h_a22e6626f2c98ed902f8ded47f6438c05}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!EN@{EN}}
+\index{EN@{EN}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{EN}]{\setlength{\rightskip}{0pt plus 5cm}\#define EN~2}}
+\label{_scout___robot_2lcd_8h_a22e6626f2c98ed902f8ded47f6438c05}
+
+
+Definition at line 60 of file lcd.h.
+
+\hypertarget{_scout___robot_2lcd_8h_a9d4ad5467cb8a39312513dfaaf4d950a}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!FCPU@{FCPU}}
+\index{FCPU@{FCPU}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{FCPU}]{\setlength{\rightskip}{0pt plus 5cm}\#define FCPU~11059200ul}}
+\label{_scout___robot_2lcd_8h_a9d4ad5467cb8a39312513dfaaf4d950a}
+
+
+Definition at line 57 of file lcd.h.
+
+\hypertarget{_scout___robot_2lcd_8h_ab44cc79afa2e158e5173a42d0bdd01b0}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!lcd\_\-port@{lcd\_\-port}}
+\index{lcd\_\-port@{lcd\_\-port}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{lcd\_\-port}]{\setlength{\rightskip}{0pt plus 5cm}\#define lcd\_\-port~PORTC}}
+\label{_scout___robot_2lcd_8h_ab44cc79afa2e158e5173a42d0bdd01b0}
+
+
+Definition at line 61 of file lcd.h.
+
+\hypertarget{_scout___robot_2lcd_8h_af8903d8eea3868940c60af887473b152}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!RS@{RS}}
+\index{RS@{RS}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{RS}]{\setlength{\rightskip}{0pt plus 5cm}\#define RS~0}}
+\label{_scout___robot_2lcd_8h_af8903d8eea3868940c60af887473b152}
+
+
+Definition at line 58 of file lcd.h.
+
+\hypertarget{_scout___robot_2lcd_8h_afc4ded33ac0ca43defcce639e965748a}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!RW@{RW}}
+\index{RW@{RW}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{RW}]{\setlength{\rightskip}{0pt plus 5cm}\#define RW~1}}
+\label{_scout___robot_2lcd_8h_afc4ded33ac0ca43defcce639e965748a}
+
+
+Definition at line 59 of file lcd.h.
+
+\hypertarget{_scout___robot_2lcd_8h_a0e1a587a6bb537fb5e9c836231291df4}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!sbit@{sbit}}
+\index{sbit@{sbit}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{sbit}]{\setlength{\rightskip}{0pt plus 5cm}\#define sbit(reg, \/  bit)~reg $|$= (1$<$$<$bit)}}
+\label{_scout___robot_2lcd_8h_a0e1a587a6bb537fb5e9c836231291df4}
+
+
+Definition at line 63 of file lcd.h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_scout___robot_2lcd_8h_adc18a2dbca08018ef649b8e84b007412}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!init\_\-lcd@{init\_\-lcd}}
+\index{init\_\-lcd@{init\_\-lcd}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{init\_\-lcd}]{\setlength{\rightskip}{0pt plus 5cm}void init\_\-lcd ()}}
+\label{_scout___robot_2lcd_8h_adc18a2dbca08018ef649b8e84b007412}
+
+
+Definition at line 86 of file lcd.h.
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=135pt]{_scout___robot_2lcd_8h_adc18a2dbca08018ef649b8e84b007412_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_scout___robot_2lcd_8h_aa239ab5a6704dda21c5071b32a3cf3a8}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!init\_\-ports@{init\_\-ports}}
+\index{init\_\-ports@{init\_\-ports}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{init\_\-ports}]{\setlength{\rightskip}{0pt plus 5cm}void init\_\-ports ()}}
+\label{_scout___robot_2lcd_8h_aa239ab5a6704dda21c5071b32a3cf3a8}
+
+
+Definition at line 107 of file motion.h.
+
+\hypertarget{_scout___robot_2lcd_8h_a8b4c38b8eab16fc264fa942c765e5634}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!itoa1@{itoa1}}
+\index{itoa1@{itoa1}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{itoa1}]{\setlength{\rightskip}{0pt plus 5cm}void itoa1 (int {\em n}, \/  char {\em s}\mbox{[}$\,$\mbox{]})}}
+\label{_scout___robot_2lcd_8h_a8b4c38b8eab16fc264fa942c765e5634}
+
+
+Definition at line 309 of file lcd.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=83pt]{_scout___robot_2lcd_8h_a8b4c38b8eab16fc264fa942c765e5634_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_scout___robot_2lcd_8h_ad8006d544921c9533806fdc898c75112}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!lcd\_\-cursor@{lcd\_\-cursor}}
+\index{lcd\_\-cursor@{lcd\_\-cursor}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{lcd\_\-cursor}]{\setlength{\rightskip}{0pt plus 5cm}void lcd\_\-cursor (char {\em row}, \/  char {\em column})}}
+\label{_scout___robot_2lcd_8h_ad8006d544921c9533806fdc898c75112}
+
+
+Definition at line 228 of file lcd.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=117pt]{_scout___robot_2lcd_8h_ad8006d544921c9533806fdc898c75112_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{_scout___robot_2lcd_8h_ad8006d544921c9533806fdc898c75112_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_scout___robot_2lcd_8h_ad338066e1bb54461c273b872652bd5b9}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!LCD\_\-DISPLAY\_\-INT\_\-1@{LCD\_\-DISPLAY\_\-INT\_\-1}}
+\index{LCD\_\-DISPLAY\_\-INT\_\-1@{LCD\_\-DISPLAY\_\-INT\_\-1}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{LCD\_\-DISPLAY\_\-INT\_\-1}]{\setlength{\rightskip}{0pt plus 5cm}void LCD\_\-DISPLAY\_\-INT\_\-1 (int {\em val})}}
+\label{_scout___robot_2lcd_8h_ad338066e1bb54461c273b872652bd5b9}
+
+
+Definition at line 291 of file lcd.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{_scout___robot_2lcd_8h_ad338066e1bb54461c273b872652bd5b9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=115pt]{_scout___robot_2lcd_8h_ad338066e1bb54461c273b872652bd5b9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_scout___robot_2lcd_8h_a71edb5dcd2805c0f4fc1526910d44136}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!LCD\_\-DISPLAY\_\-INT\_\-2@{LCD\_\-DISPLAY\_\-INT\_\-2}}
+\index{LCD\_\-DISPLAY\_\-INT\_\-2@{LCD\_\-DISPLAY\_\-INT\_\-2}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{LCD\_\-DISPLAY\_\-INT\_\-2}]{\setlength{\rightskip}{0pt plus 5cm}void LCD\_\-DISPLAY\_\-INT\_\-2 (int {\em val})}}
+\label{_scout___robot_2lcd_8h_a71edb5dcd2805c0f4fc1526910d44136}
+
+
+Definition at line 345 of file lcd.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{_scout___robot_2lcd_8h_a71edb5dcd2805c0f4fc1526910d44136_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{_scout___robot_2lcd_8h_a71edb5dcd2805c0f4fc1526910d44136_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_scout___robot_2lcd_8h_a60675105b93bba6762aaab88d732365a}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!lcd\_\-home@{lcd\_\-home}}
+\index{lcd\_\-home@{lcd\_\-home}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{lcd\_\-home}]{\setlength{\rightskip}{0pt plus 5cm}void lcd\_\-home ()}}
+\label{_scout___robot_2lcd_8h_a60675105b93bba6762aaab88d732365a}
+
+
+Definition at line 210 of file lcd.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=115pt]{_scout___robot_2lcd_8h_a60675105b93bba6762aaab88d732365a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{_scout___robot_2lcd_8h_a60675105b93bba6762aaab88d732365a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_scout___robot_2lcd_8h_ac23e73124dc9fabae95671fe71d074a6}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!lcd\_\-init@{lcd\_\-init}}
+\index{lcd\_\-init@{lcd\_\-init}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{lcd\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}void lcd\_\-init ()}}
+\label{_scout___robot_2lcd_8h_ac23e73124dc9fabae95671fe71d074a6}
+
+
+Definition at line 146 of file lcd.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=110pt]{_scout___robot_2lcd_8h_ac23e73124dc9fabae95671fe71d074a6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=135pt]{_scout___robot_2lcd_8h_ac23e73124dc9fabae95671fe71d074a6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_scout___robot_2lcd_8h_a48b63200c8d5c8c5231031674cbb63d6}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!lcd\_\-print@{lcd\_\-print}}
+\index{lcd\_\-print@{lcd\_\-print}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{lcd\_\-print}]{\setlength{\rightskip}{0pt plus 5cm}void lcd\_\-print (char {\em row}, \/  char {\em coloumn}, \/  unsigned int {\em value}, \/  int {\em digits})}}
+\label{_scout___robot_2lcd_8h_a48b63200c8d5c8c5231031674cbb63d6}
+
+
+Definition at line 240 of file lcd.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=165pt]{_scout___robot_2lcd_8h_a48b63200c8d5c8c5231031674cbb63d6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{_scout___robot_2lcd_8h_a48b63200c8d5c8c5231031674cbb63d6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_scout___robot_2lcd_8h_a8cb7183ba3f64a4c678db00589de269f}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!lcd\_\-reset\_\-4bit@{lcd\_\-reset\_\-4bit}}
+\index{lcd\_\-reset\_\-4bit@{lcd\_\-reset\_\-4bit}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{lcd\_\-reset\_\-4bit}]{\setlength{\rightskip}{0pt plus 5cm}void lcd\_\-reset\_\-4bit ()}}
+\label{_scout___robot_2lcd_8h_a8cb7183ba3f64a4c678db00589de269f}
+\hypertarget{_scout___robot_2lcd_8h_a3f8a3732239f1ff251be98da40c120e1}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!lcd\_\-set\_\-4bit@{lcd\_\-set\_\-4bit}}
+\index{lcd\_\-set\_\-4bit@{lcd\_\-set\_\-4bit}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{lcd\_\-set\_\-4bit}]{\setlength{\rightskip}{0pt plus 5cm}void lcd\_\-set\_\-4bit ()}}
+\label{_scout___robot_2lcd_8h_a3f8a3732239f1ff251be98da40c120e1}
+
+
+Definition at line 104 of file lcd.h.
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{_scout___robot_2lcd_8h_a3f8a3732239f1ff251be98da40c120e1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_scout___robot_2lcd_8h_a1eeb0747ef56e3dab0a64e7688b3ff65}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!lcd\_\-string@{lcd\_\-string}}
+\index{lcd\_\-string@{lcd\_\-string}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{lcd\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}void lcd\_\-string (char $\ast$ {\em str})}}
+\label{_scout___robot_2lcd_8h_a1eeb0747ef56e3dab0a64e7688b3ff65}
+
+
+Definition at line 217 of file lcd.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=103pt]{_scout___robot_2lcd_8h_a1eeb0747ef56e3dab0a64e7688b3ff65_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_scout___robot_2lcd_8h_a02b47802a409ab525f2fda28140150b0}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!lcd\_\-wr\_\-char@{lcd\_\-wr\_\-char}}
+\index{lcd\_\-wr\_\-char@{lcd\_\-wr\_\-char}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{lcd\_\-wr\_\-char}]{\setlength{\rightskip}{0pt plus 5cm}void lcd\_\-wr\_\-char (char {\em letter})}}
+\label{_scout___robot_2lcd_8h_a02b47802a409ab525f2fda28140150b0}
+
+
+Definition at line 185 of file lcd.h.
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{_scout___robot_2lcd_8h_a02b47802a409ab525f2fda28140150b0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_scout___robot_2lcd_8h_afff7370014e73715ce0d31b4d994c916}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!lcd\_\-wr\_\-command@{lcd\_\-wr\_\-command}}
+\index{lcd\_\-wr\_\-command@{lcd\_\-wr\_\-command}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{lcd\_\-wr\_\-command}]{\setlength{\rightskip}{0pt plus 5cm}void lcd\_\-wr\_\-command (unsigned char {\em cmd})}}
+\label{_scout___robot_2lcd_8h_afff7370014e73715ce0d31b4d994c916}
+
+
+Definition at line 160 of file lcd.h.
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{_scout___robot_2lcd_8h_afff7370014e73715ce0d31b4d994c916_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_scout___robot_2lcd_8h_aa8a9a8836962d890b4939c112fd29190}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!reverse@{reverse}}
+\index{reverse@{reverse}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{reverse}]{\setlength{\rightskip}{0pt plus 5cm}void reverse (char {\em s}\mbox{[}$\,$\mbox{]})}}
+\label{_scout___robot_2lcd_8h_aa8a9a8836962d890b4939c112fd29190}
+
+
+Definition at line 300 of file lcd.h.
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=83pt]{_scout___robot_2lcd_8h_aa8a9a8836962d890b4939c112fd29190_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{_scout___robot_2lcd_8h_a913b0b4b2d4fd1ccc45534741d386cc8}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!hundred@{hundred}}
+\index{hundred@{hundred}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{hundred}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf hundred}}}
+\label{_scout___robot_2lcd_8h_a913b0b4b2d4fd1ccc45534741d386cc8}
+
+
+Definition at line 79 of file lcd.h.
+
+\hypertarget{_scout___robot_2lcd_8h_acb559820d9ca11295b4500f179ef6392}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!i@{i}}
+\index{i@{i}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{i}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf i}}}
+\label{_scout___robot_2lcd_8h_acb559820d9ca11295b4500f179ef6392}
+
+
+Definition at line 83 of file lcd.h.
+
+\hypertarget{_scout___robot_2lcd_8h_ae98244497f01cb51c50a6a1d18642b71}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!million@{million}}
+\index{million@{million}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{million}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf million}}}
+\label{_scout___robot_2lcd_8h_ae98244497f01cb51c50a6a1d18642b71}
+
+
+Definition at line 81 of file lcd.h.
+
+\hypertarget{_scout___robot_2lcd_8h_a13006074294a071b6c7a268a498f77f7}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!temp@{temp}}
+\index{temp@{temp}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{temp}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf temp}}}
+\label{_scout___robot_2lcd_8h_a13006074294a071b6c7a268a498f77f7}
+
+
+Definition at line 76 of file lcd.h.
+
+\hypertarget{_scout___robot_2lcd_8h_ab84b805352ca4b7ecfc9601ddab528bc}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!tens@{tens}}
+\index{tens@{tens}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{tens}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf tens}}}
+\label{_scout___robot_2lcd_8h_ab84b805352ca4b7ecfc9601ddab528bc}
+
+
+Definition at line 78 of file lcd.h.
+
+\hypertarget{_scout___robot_2lcd_8h_aa790b5f78a8f90d800d64c46c3e40205}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!thousand@{thousand}}
+\index{thousand@{thousand}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{thousand}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf thousand}}}
+\label{_scout___robot_2lcd_8h_aa790b5f78a8f90d800d64c46c3e40205}
+
+
+Definition at line 80 of file lcd.h.
+
+\hypertarget{_scout___robot_2lcd_8h_a09cef70e6322053ea80ae603446346c5}{
+\index{Scout\_\-Robot/lcd.h@{Scout\_\-Robot/lcd.h}!unit@{unit}}
+\index{unit@{unit}!Scout_Robot/lcd.h@{Scout\_\-Robot/lcd.h}}
+\subsubsection[{unit}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf unit}}}
+\label{_scout___robot_2lcd_8h_a09cef70e6322053ea80ae603446346c5}
+
+
+Definition at line 77 of file lcd.h.
+

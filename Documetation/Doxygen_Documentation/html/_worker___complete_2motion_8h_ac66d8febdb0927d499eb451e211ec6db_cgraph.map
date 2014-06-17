@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" href="$_worker___complete_2motion_8h.html#ae79e92df10e04334f214055aa5b8c658" title="angle_rotate" alt="" coords="183,5,273,35"/>
+<area shape="rect" href="$_scout___robot_2motion_8h.html#a94ac7b12f6316deea91243b154b7abb4" title="STOP" alt="" coords="348,55,404,84"/>
+<area shape="rect" href="$_scout___robot_2motion_8h.html#a626849715d84e2ec7460bcd787c72089" title="MOVE_RIGHT" alt="" coords="323,108,429,137"/>
+<area shape="rect" href="$_scout___robot_2motion_8h.html#a10cb8a1450bfb05cd9c72ad09ce7f2fe" title="motion_set" alt="" coords="477,81,563,111"/>
+</map>

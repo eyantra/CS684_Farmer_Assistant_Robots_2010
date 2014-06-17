@@ -1,0 +1,25 @@
+<map id="G" name="G">
+<area shape="rect" href="$_scout___robot_2firebird__winavr_8h.html#ab01199c927ceda6f9520c7afb0f1b099" title="init_devices" alt="" coords="143,243,233,272"/>
+<area shape="rect" href="$_scout___robot_2firebird__winavr_8h.html#a0488fb29bb9c094d6b89d273d6ae3f1d" title="init_dist_measure" alt="" coords="127,376,249,405"/>
+<area shape="rect" href="$_scout___robot_2lcd_8h.html#ad338066e1bb54461c273b872652bd5b9" title="LCD_DISPLAY_INT_1" alt="" coords="113,429,263,459"/>
+<area shape="rect" href="$_scout___robot_2lcd_8h.html#a71edb5dcd2805c0f4fc1526910d44136" title="LCD_DISPLAY_INT_2" alt="" coords="113,483,263,512"/>
+<area shape="rect" href="$_scout___robot_2motion_8h.html#aad2b5c3032b6186491dea9117e5fa608" title="MOTOR_LEFT_SPEED" alt="" coords="109,536,267,565"/>
+<area shape="rect" href="$_scout___robot_2motion_8h.html#aa9a316d01b0ac2faac57c463de947ff8" title="MOTOR_RIGHT_SPEED" alt="" coords="105,589,271,619"/>
+<area shape="rect" href="$_scout___robot_2motion_8h.html#a2590e4ebe90aee4206d58ff6c1a64ef5" title="MOVE_FWD" alt="" coords="140,643,236,672"/>
+<area shape="rect" href="$_scout___robot_2whiteline_8h.html#a2d55adaff96e84bf99460f7c9d24f7a4" title="init_adc" alt="" coords="351,5,417,35"/>
+<area shape="rect" href="$_scout___robot_2buzzer_8h.html#a96d9b40042c47c0e0eb1b85feaf86ece" title="init_buzzer" alt="" coords="343,59,425,88"/>
+<area shape="rect" href="$_scout___robot_2lcd_8h.html#adc18a2dbca08018ef649b8e84b007412" title="init_lcd" alt="" coords="353,112,415,141"/>
+<area shape="rect" href="$_scout___robot_2lcd_8h.html#ac23e73124dc9fabae95671fe71d074a6" title="lcd_init" alt="" coords="520,217,581,247"/>
+<area shape="rect" href="$_scout___robot_2lcd_8h.html#a3f8a3732239f1ff251be98da40c120e1" title="lcd_set_4bit" alt="" coords="339,216,429,245"/>
+<area shape="rect" href="$_scout___robot_2motion_8h.html#a17cf811a885634d71a23e8d4a20457f0" title="motion_pin_config" alt="" coords="321,269,447,299"/>
+<area shape="rect" href="$_scout___robot_2whiteline_8h.html#a5c2ba800834495bb295891490cb1c760" title="port_init" alt="" coords="351,323,417,352"/>
+<area shape="rect" href="$_scout___robot_2motion_8h.html#a578f7cc9b705ce549aa856c927b102e8" title="timer5_init" alt="" coords="344,376,424,405"/>
+<area shape="rect" href="$_scout___robot_2firebird__winavr_8h.html#abbbf5055286d09a73b87f57f71dfd0b9" title="uart0_init" alt="" coords="347,429,421,459"/>
+<area shape="rect" href="$_scout___robot_2lcd_8h.html#afff7370014e73715ce0d31b4d994c916" title="lcd_wr_command" alt="" coords="653,403,776,432"/>
+<area shape="rect" href="$_scout___robot_2whiteline_8h.html#a27f01c5d49b89503a6d1380f151b19af" title="adc_pin_config" alt="" coords="497,323,604,352"/>
+<area shape="rect" href="$_scout___robot_2lcd_8h.html#a48b63200c8d5c8c5231031674cbb63d6" title="lcd_print" alt="" coords="349,483,419,512"/>
+<area shape="rect" href="$_scout___robot_2lcd_8h.html#ad8006d544921c9533806fdc898c75112" title="lcd_cursor" alt="" coords="511,403,591,432"/>
+<area shape="rect" href="$_scout___robot_2lcd_8h.html#a60675105b93bba6762aaab88d732365a" title="lcd_home" alt="" coords="512,456,589,485"/>
+<area shape="rect" href="$_scout___robot_2lcd_8h.html#a02b47802a409ab525f2fda28140150b0" title="lcd_wr_char" alt="" coords="505,509,596,539"/>
+<area shape="rect" href="$_scout___robot_2motion_8h.html#a10cb8a1450bfb05cd9c72ad09ce7f2fe" title="motion_set" alt="" coords="341,643,427,672"/>
+</map>

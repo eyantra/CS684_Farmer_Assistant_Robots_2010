@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" href="$_arm___control_8h.html#a64ae6c440a4ed9892bdde8c4ae8de660" title="Lift" alt="" coords="131,5,171,35"/>
+<area shape="rect" href="$_arm___control_8h.html#a2916657630de9105936250904d7611a7" title="Function to lower the arm gripper to position 0." alt="" coords="123,59,179,88"/>
+<area shape="rect" href="$_worker___complete_8c.html#a744180995c9d3d93c82f9314d9f1fbbe" title="Once the worker robot reaches the specifed location where the object was detected..." alt="" coords="228,7,313,36"/>
+<area shape="rect" href="$_worker___complete_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667" title="Execution begin here." alt="" coords="364,33,412,63"/>
+</map>

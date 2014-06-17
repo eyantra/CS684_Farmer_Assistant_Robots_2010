@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" href="$_scout___robot_2ir_8h.html#aa09e87277c2c166936627a82126aac42" title="front_dist_mm" alt="" coords="173,23,277,52"/>
+<area shape="rect" href="$_worker___complete_8c.html#a213460c7ccffed0cb4ad28fd34c62ba8" title="Calculate the exact distance of an object from the front of the robot in mm." alt="" coords="327,23,396,52"/>
+<area shape="rect" href="$_worker___complete_8c.html#a744180995c9d3d93c82f9314d9f1fbbe" title="Once the worker robot reaches the specifed location where the object was detected..." alt="" coords="583,23,668,52"/>
+<area shape="rect" href="$_worker___complete_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667" title="Execution begin here." alt="" coords="719,49,767,79"/>
+<area shape="rect" href="$_worker___complete_8c.html#a0c9df54dbd6d34b2f4148de0c3de923b" title="Moves the worker Robot towards the object to be collected depending on how far the..." alt="" coords="445,23,533,52"/>
+</map>

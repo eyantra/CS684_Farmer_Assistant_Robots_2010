@@ -1,0 +1,340 @@
+\hypertarget{_line_follower_counter_8c}{
+\section{Scout\_\-Robot/LineFollowerCounter.c File Reference}
+\label{_line_follower_counter_8c}\index{Scout\_\-Robot/LineFollowerCounter.c@{Scout\_\-Robot/LineFollowerCounter.c}}
+}
+{\ttfamily \#include \char`\"{}firebird\_\-winavr.h\char`\"{}}\par
+{\ttfamily \#include $<$avr/io.h$>$}\par
+{\ttfamily \#include $<$avr/interrupt.h$>$}\par
+{\ttfamily \#include $<$util/delay.h$>$}\par
+{\ttfamily \#include $<$math.h$>$}\par
+{\ttfamily \#include \char`\"{}motion.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}whiteline.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}ir.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}lcd.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}buzzer.h\char`\"{}}\par
+Include dependency graph for LineFollowerCounter.c:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{_line_follower_counter_8c__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=116pt]{_line_follower_counter_8c__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_line_follower_counter_8c_a98a290ada01eb27fd2ff4564371566e5}{ISR} (INT4\_\-vect)
+\item 
+\hyperlink{_line_follower_counter_8c_a6225c50fbafa01589351ed487223aacb}{ISR} (INT5\_\-vect)
+\item 
+\hyperlink{_line_follower_counter_8c_ab5f8e79f6ffa3be348924e573e8dcfd1}{SIGNAL} (SIG\_\-USART0\_\-RECV)
+\begin{DoxyCompactList}\small\item\em ISR for receive complete interrupt. \item\end{DoxyCompactList}\item 
+void \hyperlink{_line_follower_counter_8c_a6288eba0f8e8ad3ab1544ad731eb7667}{main} (void)
+\begin{DoxyCompactList}\small\item\em Moves the scout robot to scan the field. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{_line_follower_counter_8c_a1d7b72031fa39d396d531503904f337b}{position} = 0
+\item 
+unsigned char \hyperlink{_line_follower_counter_8c_af48e0311746bc01574a90f142220e748}{command} = 0
+\item 
+unsigned int \hyperlink{_line_follower_counter_8c_a37d145f01d952970d059941663ccfff0}{stopDistance} = 200
+\item 
+unsigned int \hyperlink{_line_follower_counter_8c_a492e7b58ed599c481757fecb578af24e}{maxWhite} = 40
+\item 
+unsigned int \hyperlink{_line_follower_counter_8c_ad9aab8b396b3cc6d5ec886ed89c08848}{fastSpeed} = 120
+\item 
+unsigned int \hyperlink{_line_follower_counter_8c_a496e53769bd08930fd22618690e20621}{mediumSpeed} = 100
+\item 
+unsigned int \hyperlink{_line_follower_counter_8c_a902c10aeadbed6441e1361ea8949cb7f}{slowSpeed} = 80
+\item 
+unsigned int \hyperlink{_line_follower_counter_8c_a6a88a42d06770ea17c78a8368b29e4ce}{RIGHT\_\-WHITELINE\_\-VALUE}
+\item 
+unsigned int \hyperlink{_line_follower_counter_8c_a0ae7d1d7c31810a587fe0091c8aa12d8}{MIDDLE\_\-WHITELINE\_\-VALUE}
+\item 
+unsigned int \hyperlink{_line_follower_counter_8c_a6c90d82e3056adb1bbd594030944d3d5}{LEFT\_\-WHITELINE\_\-VALUE}
+\item 
+unsigned int \hyperlink{_line_follower_counter_8c_afa5f52316976b037653d0964815ca85f}{FRONT\_\-IR\_\-VALUE}
+\item 
+unsigned int \hyperlink{_line_follower_counter_8c_a227e31138c9cd9e9c85f9f3353cb503d}{startBlack} = 0
+\item 
+unsigned int \hyperlink{_line_follower_counter_8c_a5004342352f04d68ff8f12c17ec2cf6f}{completeBlack} = 0
+\item 
+unsigned int \hyperlink{_line_follower_counter_8c_ae515db750874720ff18664c8252ae6d8}{ShaftCountLeft} = 0
+\item 
+unsigned int \hyperlink{_line_follower_counter_8c_a871859f12e0b2563b435d6c3c6b2759e}{ShaftCountRight} = 0
+\item 
+unsigned int \hyperlink{_line_follower_counter_8c_a13b7401bc88be06cfce141b3aacd5256}{ShaftCountMax} = 10
+\item 
+unsigned int \hyperlink{_line_follower_counter_8c_a34c0c3ce843ecb8ee20be9eee84cac2d}{prevLeftSpeed} = 0
+\item 
+unsigned int \hyperlink{_line_follower_counter_8c_ab85651c35258527ad41ce8f20ea34135}{prevRightSpeed} = 0
+\item 
+unsigned int \hyperlink{_line_follower_counter_8c_a2214cded400f5f10aff4dced11b10b78}{prevState} = 0
+\item 
+unsigned int \hyperlink{_line_follower_counter_8c_a0971b43360abc733cbc1b30a1282c663}{sendOnce} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_line_follower_counter_8c_a6225c50fbafa01589351ed487223aacb}{
+\index{LineFollowerCounter.c@{LineFollowerCounter.c}!ISR@{ISR}}
+\index{ISR@{ISR}!LineFollowerCounter.c@{LineFollowerCounter.c}}
+\subsubsection[{ISR}]{\setlength{\rightskip}{0pt plus 5cm}ISR (INT5\_\-vect)}}
+\label{_line_follower_counter_8c_a6225c50fbafa01589351ed487223aacb}
+
+
+Definition at line 91 of file LineFollowerCounter.c.
+
+\hypertarget{_line_follower_counter_8c_a98a290ada01eb27fd2ff4564371566e5}{
+\index{LineFollowerCounter.c@{LineFollowerCounter.c}!ISR@{ISR}}
+\index{ISR@{ISR}!LineFollowerCounter.c@{LineFollowerCounter.c}}
+\subsubsection[{ISR}]{\setlength{\rightskip}{0pt plus 5cm}ISR (INT4\_\-vect)}}
+\label{_line_follower_counter_8c_a98a290ada01eb27fd2ff4564371566e5}
+
+
+Definition at line 83 of file LineFollowerCounter.c.
+
+\hypertarget{_line_follower_counter_8c_a6288eba0f8e8ad3ab1544ad731eb7667}{
+\index{LineFollowerCounter.c@{LineFollowerCounter.c}!main@{main}}
+\index{main@{main}!LineFollowerCounter.c@{LineFollowerCounter.c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}void main (void)}}
+\label{_line_follower_counter_8c_a6288eba0f8e8ad3ab1544ad731eb7667}
+
+
+Moves the scout robot to scan the field. 
+
+
+
+ISR for receive complete interrupteftSpeed = fastSpeed;
+
+ISR for receive complete interrupt \hyperlink{_scout___robot_2motion_8h_a2590e4ebe90aee4206d58ff6c1a64ef5}{MOVE\_\-FWD()}; 
+
+
+
+Definition at line 117 of file LineFollowerCounter.c.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{_line_follower_counter_8c_a6288eba0f8e8ad3ab1544ad731eb7667_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_line_follower_counter_8c_ab5f8e79f6ffa3be348924e573e8dcfd1}{
+\index{LineFollowerCounter.c@{LineFollowerCounter.c}!SIGNAL@{SIGNAL}}
+\index{SIGNAL@{SIGNAL}!LineFollowerCounter.c@{LineFollowerCounter.c}}
+\subsubsection[{SIGNAL}]{\setlength{\rightskip}{0pt plus 5cm}SIGNAL (SIG\_\-USART0\_\-RECV)}}
+\label{_line_follower_counter_8c_ab5f8e79f6ffa3be348924e573e8dcfd1}
+
+
+ISR for receive complete interrupt. 
+
+
+
+Definition at line 101 of file LineFollowerCounter.c.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=159pt]{_line_follower_counter_8c_ab5f8e79f6ffa3be348924e573e8dcfd1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{_line_follower_counter_8c_af48e0311746bc01574a90f142220e748}{
+\index{LineFollowerCounter.c@{LineFollowerCounter.c}!command@{command}}
+\index{command@{command}!LineFollowerCounter.c@{LineFollowerCounter.c}}
+\subsubsection[{command}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char {\bf command} = 0}}
+\label{_line_follower_counter_8c_af48e0311746bc01574a90f142220e748}
+
+
+Definition at line 59 of file LineFollowerCounter.c.
+
+\hypertarget{_line_follower_counter_8c_a5004342352f04d68ff8f12c17ec2cf6f}{
+\index{LineFollowerCounter.c@{LineFollowerCounter.c}!completeBlack@{completeBlack}}
+\index{completeBlack@{completeBlack}!LineFollowerCounter.c@{LineFollowerCounter.c}}
+\subsubsection[{completeBlack}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf completeBlack} = 0}}
+\label{_line_follower_counter_8c_a5004342352f04d68ff8f12c17ec2cf6f}
+
+
+Definition at line 71 of file LineFollowerCounter.c.
+
+\hypertarget{_line_follower_counter_8c_ad9aab8b396b3cc6d5ec886ed89c08848}{
+\index{LineFollowerCounter.c@{LineFollowerCounter.c}!fastSpeed@{fastSpeed}}
+\index{fastSpeed@{fastSpeed}!LineFollowerCounter.c@{LineFollowerCounter.c}}
+\subsubsection[{fastSpeed}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf fastSpeed} = 120}}
+\label{_line_follower_counter_8c_ad9aab8b396b3cc6d5ec886ed89c08848}
+
+
+Definition at line 62 of file LineFollowerCounter.c.
+
+\hypertarget{_line_follower_counter_8c_afa5f52316976b037653d0964815ca85f}{
+\index{LineFollowerCounter.c@{LineFollowerCounter.c}!FRONT\_\-IR\_\-VALUE@{FRONT\_\-IR\_\-VALUE}}
+\index{FRONT\_\-IR\_\-VALUE@{FRONT\_\-IR\_\-VALUE}!LineFollowerCounter.c@{LineFollowerCounter.c}}
+\subsubsection[{FRONT\_\-IR\_\-VALUE}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf FRONT\_\-IR\_\-VALUE}}}
+\label{_line_follower_counter_8c_afa5f52316976b037653d0964815ca85f}
+
+
+Definition at line 68 of file LineFollowerCounter.c.
+
+\hypertarget{_line_follower_counter_8c_a6c90d82e3056adb1bbd594030944d3d5}{
+\index{LineFollowerCounter.c@{LineFollowerCounter.c}!LEFT\_\-WHITELINE\_\-VALUE@{LEFT\_\-WHITELINE\_\-VALUE}}
+\index{LEFT\_\-WHITELINE\_\-VALUE@{LEFT\_\-WHITELINE\_\-VALUE}!LineFollowerCounter.c@{LineFollowerCounter.c}}
+\subsubsection[{LEFT\_\-WHITELINE\_\-VALUE}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf LEFT\_\-WHITELINE\_\-VALUE}}}
+\label{_line_follower_counter_8c_a6c90d82e3056adb1bbd594030944d3d5}
+
+
+Definition at line 67 of file LineFollowerCounter.c.
+
+\hypertarget{_line_follower_counter_8c_a492e7b58ed599c481757fecb578af24e}{
+\index{LineFollowerCounter.c@{LineFollowerCounter.c}!maxWhite@{maxWhite}}
+\index{maxWhite@{maxWhite}!LineFollowerCounter.c@{LineFollowerCounter.c}}
+\subsubsection[{maxWhite}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf maxWhite} = 40}}
+\label{_line_follower_counter_8c_a492e7b58ed599c481757fecb578af24e}
+
+
+Definition at line 61 of file LineFollowerCounter.c.
+
+\hypertarget{_line_follower_counter_8c_a496e53769bd08930fd22618690e20621}{
+\index{LineFollowerCounter.c@{LineFollowerCounter.c}!mediumSpeed@{mediumSpeed}}
+\index{mediumSpeed@{mediumSpeed}!LineFollowerCounter.c@{LineFollowerCounter.c}}
+\subsubsection[{mediumSpeed}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf mediumSpeed} = 100}}
+\label{_line_follower_counter_8c_a496e53769bd08930fd22618690e20621}
+
+
+Definition at line 63 of file LineFollowerCounter.c.
+
+\hypertarget{_line_follower_counter_8c_a0ae7d1d7c31810a587fe0091c8aa12d8}{
+\index{LineFollowerCounter.c@{LineFollowerCounter.c}!MIDDLE\_\-WHITELINE\_\-VALUE@{MIDDLE\_\-WHITELINE\_\-VALUE}}
+\index{MIDDLE\_\-WHITELINE\_\-VALUE@{MIDDLE\_\-WHITELINE\_\-VALUE}!LineFollowerCounter.c@{LineFollowerCounter.c}}
+\subsubsection[{MIDDLE\_\-WHITELINE\_\-VALUE}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf MIDDLE\_\-WHITELINE\_\-VALUE}}}
+\label{_line_follower_counter_8c_a0ae7d1d7c31810a587fe0091c8aa12d8}
+
+
+Definition at line 66 of file LineFollowerCounter.c.
+
+\hypertarget{_line_follower_counter_8c_a1d7b72031fa39d396d531503904f337b}{
+\index{LineFollowerCounter.c@{LineFollowerCounter.c}!position@{position}}
+\index{position@{position}!LineFollowerCounter.c@{LineFollowerCounter.c}}
+\subsubsection[{position}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf position} = 0}}
+\label{_line_follower_counter_8c_a1d7b72031fa39d396d531503904f337b}
+
+
+Definition at line 58 of file LineFollowerCounter.c.
+
+\hypertarget{_line_follower_counter_8c_a34c0c3ce843ecb8ee20be9eee84cac2d}{
+\index{LineFollowerCounter.c@{LineFollowerCounter.c}!prevLeftSpeed@{prevLeftSpeed}}
+\index{prevLeftSpeed@{prevLeftSpeed}!LineFollowerCounter.c@{LineFollowerCounter.c}}
+\subsubsection[{prevLeftSpeed}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf prevLeftSpeed} = 0}}
+\label{_line_follower_counter_8c_a34c0c3ce843ecb8ee20be9eee84cac2d}
+
+
+Definition at line 77 of file LineFollowerCounter.c.
+
+\hypertarget{_line_follower_counter_8c_ab85651c35258527ad41ce8f20ea34135}{
+\index{LineFollowerCounter.c@{LineFollowerCounter.c}!prevRightSpeed@{prevRightSpeed}}
+\index{prevRightSpeed@{prevRightSpeed}!LineFollowerCounter.c@{LineFollowerCounter.c}}
+\subsubsection[{prevRightSpeed}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf prevRightSpeed} = 0}}
+\label{_line_follower_counter_8c_ab85651c35258527ad41ce8f20ea34135}
+
+
+Definition at line 78 of file LineFollowerCounter.c.
+
+\hypertarget{_line_follower_counter_8c_a2214cded400f5f10aff4dced11b10b78}{
+\index{LineFollowerCounter.c@{LineFollowerCounter.c}!prevState@{prevState}}
+\index{prevState@{prevState}!LineFollowerCounter.c@{LineFollowerCounter.c}}
+\subsubsection[{prevState}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf prevState} = 0}}
+\label{_line_follower_counter_8c_a2214cded400f5f10aff4dced11b10b78}
+
+
+Definition at line 79 of file LineFollowerCounter.c.
+
+\hypertarget{_line_follower_counter_8c_a6a88a42d06770ea17c78a8368b29e4ce}{
+\index{LineFollowerCounter.c@{LineFollowerCounter.c}!RIGHT\_\-WHITELINE\_\-VALUE@{RIGHT\_\-WHITELINE\_\-VALUE}}
+\index{RIGHT\_\-WHITELINE\_\-VALUE@{RIGHT\_\-WHITELINE\_\-VALUE}!LineFollowerCounter.c@{LineFollowerCounter.c}}
+\subsubsection[{RIGHT\_\-WHITELINE\_\-VALUE}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf RIGHT\_\-WHITELINE\_\-VALUE}}}
+\label{_line_follower_counter_8c_a6a88a42d06770ea17c78a8368b29e4ce}
+
+
+Definition at line 65 of file LineFollowerCounter.c.
+
+\hypertarget{_line_follower_counter_8c_a0971b43360abc733cbc1b30a1282c663}{
+\index{LineFollowerCounter.c@{LineFollowerCounter.c}!sendOnce@{sendOnce}}
+\index{sendOnce@{sendOnce}!LineFollowerCounter.c@{LineFollowerCounter.c}}
+\subsubsection[{sendOnce}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf sendOnce} = 0}}
+\label{_line_follower_counter_8c_a0971b43360abc733cbc1b30a1282c663}
+
+
+Definition at line 81 of file LineFollowerCounter.c.
+
+\hypertarget{_line_follower_counter_8c_ae515db750874720ff18664c8252ae6d8}{
+\index{LineFollowerCounter.c@{LineFollowerCounter.c}!ShaftCountLeft@{ShaftCountLeft}}
+\index{ShaftCountLeft@{ShaftCountLeft}!LineFollowerCounter.c@{LineFollowerCounter.c}}
+\subsubsection[{ShaftCountLeft}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf ShaftCountLeft} = 0}}
+\label{_line_follower_counter_8c_ae515db750874720ff18664c8252ae6d8}
+
+
+Definition at line 73 of file LineFollowerCounter.c.
+
+\hypertarget{_line_follower_counter_8c_a13b7401bc88be06cfce141b3aacd5256}{
+\index{LineFollowerCounter.c@{LineFollowerCounter.c}!ShaftCountMax@{ShaftCountMax}}
+\index{ShaftCountMax@{ShaftCountMax}!LineFollowerCounter.c@{LineFollowerCounter.c}}
+\subsubsection[{ShaftCountMax}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf ShaftCountMax} = 10}}
+\label{_line_follower_counter_8c_a13b7401bc88be06cfce141b3aacd5256}
+
+
+Definition at line 75 of file LineFollowerCounter.c.
+
+\hypertarget{_line_follower_counter_8c_a871859f12e0b2563b435d6c3c6b2759e}{
+\index{LineFollowerCounter.c@{LineFollowerCounter.c}!ShaftCountRight@{ShaftCountRight}}
+\index{ShaftCountRight@{ShaftCountRight}!LineFollowerCounter.c@{LineFollowerCounter.c}}
+\subsubsection[{ShaftCountRight}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf ShaftCountRight} = 0}}
+\label{_line_follower_counter_8c_a871859f12e0b2563b435d6c3c6b2759e}
+
+
+Definition at line 74 of file LineFollowerCounter.c.
+
+\hypertarget{_line_follower_counter_8c_a902c10aeadbed6441e1361ea8949cb7f}{
+\index{LineFollowerCounter.c@{LineFollowerCounter.c}!slowSpeed@{slowSpeed}}
+\index{slowSpeed@{slowSpeed}!LineFollowerCounter.c@{LineFollowerCounter.c}}
+\subsubsection[{slowSpeed}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf slowSpeed} = 80}}
+\label{_line_follower_counter_8c_a902c10aeadbed6441e1361ea8949cb7f}
+
+
+Definition at line 64 of file LineFollowerCounter.c.
+
+\hypertarget{_line_follower_counter_8c_a227e31138c9cd9e9c85f9f3353cb503d}{
+\index{LineFollowerCounter.c@{LineFollowerCounter.c}!startBlack@{startBlack}}
+\index{startBlack@{startBlack}!LineFollowerCounter.c@{LineFollowerCounter.c}}
+\subsubsection[{startBlack}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf startBlack} = 0}}
+\label{_line_follower_counter_8c_a227e31138c9cd9e9c85f9f3353cb503d}
+
+
+Definition at line 70 of file LineFollowerCounter.c.
+
+\hypertarget{_line_follower_counter_8c_a37d145f01d952970d059941663ccfff0}{
+\index{LineFollowerCounter.c@{LineFollowerCounter.c}!stopDistance@{stopDistance}}
+\index{stopDistance@{stopDistance}!LineFollowerCounter.c@{LineFollowerCounter.c}}
+\subsubsection[{stopDistance}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf stopDistance} = 200}}
+\label{_line_follower_counter_8c_a37d145f01d952970d059941663ccfff0}
+
+
+Definition at line 60 of file LineFollowerCounter.c.
+

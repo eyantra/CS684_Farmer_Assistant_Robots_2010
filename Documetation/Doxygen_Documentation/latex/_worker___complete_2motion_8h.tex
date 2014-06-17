@@ -1,0 +1,672 @@
+\hypertarget{_worker___complete_2motion_8h}{
+\section{Worker\_\-Complete/motion.h File Reference}
+\label{_worker___complete_2motion_8h}\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}}
+}
+This graph shows which files directly or indirectly include this file:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{_worker___complete_2motion_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_worker___complete_2motion_8h_a98a290ada01eb27fd2ff4564371566e5}{ISR} (INT4\_\-vect)
+\item 
+\hyperlink{_worker___complete_2motion_8h_a6225c50fbafa01589351ed487223aacb}{ISR} (INT5\_\-vect)
+\item 
+void \hyperlink{_worker___complete_2motion_8h_a17cf811a885634d71a23e8d4a20457f0}{motion\_\-pin\_\-config} (void)
+\item 
+void \hyperlink{_worker___complete_2motion_8h_ae20e0ac384c729be97c963cb470456a9}{left\_\-encoder\_\-pin\_\-config} (void)
+\item 
+void \hyperlink{_worker___complete_2motion_8h_a0db68d18b578ab9e12bc1d80915ef0d7}{right\_\-encoder\_\-pin\_\-config} (void)
+\item 
+void \hyperlink{_worker___complete_2motion_8h_aa239ab5a6704dda21c5071b32a3cf3a8}{init\_\-ports} ()
+\item 
+void \hyperlink{_worker___complete_2motion_8h_aff7831bb17c1206ab082415ee14e21b1}{left\_\-position\_\-encoder\_\-interrupt\_\-init} (void)
+\item 
+void \hyperlink{_worker___complete_2motion_8h_a1333f7476858c2d76f7d725dfb0e7d88}{right\_\-position\_\-encoder\_\-interrupt\_\-init} (void)
+\item 
+void \hyperlink{_worker___complete_2motion_8h_a10cb8a1450bfb05cd9c72ad09ce7f2fe}{motion\_\-set} (unsigned char Direction)
+\item 
+void \hyperlink{_worker___complete_2motion_8h_a2590e4ebe90aee4206d58ff6c1a64ef5}{MOVE\_\-FWD} (void)
+\item 
+void \hyperlink{_worker___complete_2motion_8h_ad8c06ea69cfb788ebadd51bfefb3dfb0}{MOVE\_\-REV} (void)
+\item 
+void \hyperlink{_worker___complete_2motion_8h_afd305b0fd36b6347d052bcf30e45e421}{MOVE\_\-LEFT} (void)
+\item 
+void \hyperlink{_worker___complete_2motion_8h_a626849715d84e2ec7460bcd787c72089}{MOVE\_\-RIGHT} (void)
+\item 
+void \hyperlink{_worker___complete_2motion_8h_aaf8fc6b7fbccf34af2c35ad5c276435f}{MOVE\_\-SOFT\_\-LEFT} (void)
+\item 
+void \hyperlink{_worker___complete_2motion_8h_a1756a1df57a60fda3a4156506f857f7a}{MOVE\_\-SOFT\_\-RIGHT} (void)
+\item 
+void \hyperlink{_worker___complete_2motion_8h_a1bfa384685cd0f2882f2aa4befb5011a}{MOVE\_\-INPLACE\_\-LEFT} (void)
+\item 
+void \hyperlink{_worker___complete_2motion_8h_a0bfd486466153ad4acc52cd8c2b266dd}{MOVE\_\-INPLACE\_\-RIGHT} (void)
+\item 
+void \hyperlink{_worker___complete_2motion_8h_a94ac7b12f6316deea91243b154b7abb4}{STOP} (void)
+\item 
+void \hyperlink{_worker___complete_2motion_8h_ae79e92df10e04334f214055aa5b8c658}{angle\_\-rotate} (unsigned int \hyperlink{_worker___complete_2motion_8h_a9719b725d5dde7ae77cf440b08ab2e21}{Degrees})
+\item 
+void \hyperlink{_worker___complete_2motion_8h_afc027345bdb5eb901ff0d7aa5ffa7306}{linear\_\-distance\_\-mm} (unsigned int DistanceInMM)
+\item 
+void \hyperlink{_worker___complete_2motion_8h_a3a0711f34af615c274e67a580696f9ad}{forward\_\-mm} (unsigned int DistanceInMM)
+\item 
+void \hyperlink{_worker___complete_2motion_8h_a211524abdbae5dd0a77807b843ec60c7}{back\_\-mm} (unsigned int DistanceInMM)
+\item 
+void \hyperlink{_worker___complete_2motion_8h_ac66d8febdb0927d499eb451e211ec6db}{RIGHT\_\-TURN\_\-BY} (int Degree)
+\item 
+void \hyperlink{_worker___complete_2motion_8h_aef3c7f13796512f56db32b784ca4c651}{LEFT\_\-TURN\_\-BY} (int Degree)
+\item 
+void \hyperlink{_worker___complete_2motion_8h_a578f7cc9b705ce549aa856c927b102e8}{timer5\_\-init} ()
+\item 
+void \hyperlink{_worker___complete_2motion_8h_aa5ae897cf316acc5c766757ffd41db19}{velocity} (unsigned char left\_\-motor, unsigned char right\_\-motor)
+\item 
+void \hyperlink{_worker___complete_2motion_8h_aad2b5c3032b6186491dea9117e5fa608}{MOTOR\_\-LEFT\_\-SPEED} (int val)
+\item 
+void \hyperlink{_worker___complete_2motion_8h_aa9a316d01b0ac2faac57c463de947ff8}{MOTOR\_\-RIGHT\_\-SPEED} (int val)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{_worker___complete_2motion_8h_ae515db750874720ff18664c8252ae6d8}{ShaftCountLeft} = 0
+\item 
+unsigned int \hyperlink{_worker___complete_2motion_8h_a871859f12e0b2563b435d6c3c6b2759e}{ShaftCountRight} = 0
+\item 
+unsigned int \hyperlink{_worker___complete_2motion_8h_a13b7401bc88be06cfce141b3aacd5256}{ShaftCountMax} = 10
+\item 
+unsigned int \hyperlink{_worker___complete_2motion_8h_a9719b725d5dde7ae77cf440b08ab2e21}{Degrees}
+\item 
+unsigned int \hyperlink{_worker___complete_2motion_8h_a5004342352f04d68ff8f12c17ec2cf6f}{completeBlack} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_worker___complete_2motion_8h_ae79e92df10e04334f214055aa5b8c658}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!angle\_\-rotate@{angle\_\-rotate}}
+\index{angle\_\-rotate@{angle\_\-rotate}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{angle\_\-rotate}]{\setlength{\rightskip}{0pt plus 5cm}void angle\_\-rotate (unsigned int {\em Degrees})}}
+\label{_worker___complete_2motion_8h_ae79e92df10e04334f214055aa5b8c658}
+
+
+Definition at line 201 of file motion.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{_worker___complete_2motion_8h_ae79e92df10e04334f214055aa5b8c658_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{_worker___complete_2motion_8h_ae79e92df10e04334f214055aa5b8c658_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_worker___complete_2motion_8h_a211524abdbae5dd0a77807b843ec60c7}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!back\_\-mm@{back\_\-mm}}
+\index{back\_\-mm@{back\_\-mm}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{back\_\-mm}]{\setlength{\rightskip}{0pt plus 5cm}void back\_\-mm (unsigned int {\em DistanceInMM})}}
+\label{_worker___complete_2motion_8h_a211524abdbae5dd0a77807b843ec60c7}
+
+
+Definition at line 248 of file motion.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{_worker___complete_2motion_8h_a211524abdbae5dd0a77807b843ec60c7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=140pt]{_worker___complete_2motion_8h_a211524abdbae5dd0a77807b843ec60c7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_worker___complete_2motion_8h_a3a0711f34af615c274e67a580696f9ad}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!forward\_\-mm@{forward\_\-mm}}
+\index{forward\_\-mm@{forward\_\-mm}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{forward\_\-mm}]{\setlength{\rightskip}{0pt plus 5cm}void forward\_\-mm (unsigned int {\em DistanceInMM})}}
+\label{_worker___complete_2motion_8h_a3a0711f34af615c274e67a580696f9ad}
+
+
+Definition at line 242 of file motion.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{_worker___complete_2motion_8h_a3a0711f34af615c274e67a580696f9ad_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{_worker___complete_2motion_8h_a3a0711f34af615c274e67a580696f9ad_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_worker___complete_2motion_8h_aa239ab5a6704dda21c5071b32a3cf3a8}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!init\_\-ports@{init\_\-ports}}
+\index{init\_\-ports@{init\_\-ports}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{init\_\-ports}]{\setlength{\rightskip}{0pt plus 5cm}void init\_\-ports ()}}
+\label{_worker___complete_2motion_8h_aa239ab5a6704dda21c5071b32a3cf3a8}
+
+
+Definition at line 107 of file motion.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=130pt]{_worker___complete_2motion_8h_aa239ab5a6704dda21c5071b32a3cf3a8_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_worker___complete_2motion_8h_a6225c50fbafa01589351ed487223aacb}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!ISR@{ISR}}
+\index{ISR@{ISR}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{ISR}]{\setlength{\rightskip}{0pt plus 5cm}ISR (INT5\_\-vect)}}
+\label{_worker___complete_2motion_8h_a6225c50fbafa01589351ed487223aacb}
+
+
+Definition at line 75 of file motion.h.
+
+\hypertarget{_worker___complete_2motion_8h_a98a290ada01eb27fd2ff4564371566e5}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!ISR@{ISR}}
+\index{ISR@{ISR}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{ISR}]{\setlength{\rightskip}{0pt plus 5cm}ISR (INT4\_\-vect)}}
+\label{_worker___complete_2motion_8h_a98a290ada01eb27fd2ff4564371566e5}
+
+
+Definition at line 65 of file motion.h.
+
+\hypertarget{_worker___complete_2motion_8h_ae20e0ac384c729be97c963cb470456a9}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!left\_\-encoder\_\-pin\_\-config@{left\_\-encoder\_\-pin\_\-config}}
+\index{left\_\-encoder\_\-pin\_\-config@{left\_\-encoder\_\-pin\_\-config}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{left\_\-encoder\_\-pin\_\-config}]{\setlength{\rightskip}{0pt plus 5cm}void left\_\-encoder\_\-pin\_\-config (void)}}
+\label{_worker___complete_2motion_8h_ae20e0ac384c729be97c963cb470456a9}
+
+
+Definition at line 94 of file motion.h.
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=134pt]{_worker___complete_2motion_8h_ae20e0ac384c729be97c963cb470456a9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_worker___complete_2motion_8h_aff7831bb17c1206ab082415ee14e21b1}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!left\_\-position\_\-encoder\_\-interrupt\_\-init@{left\_\-position\_\-encoder\_\-interrupt\_\-init}}
+\index{left\_\-position\_\-encoder\_\-interrupt\_\-init@{left\_\-position\_\-encoder\_\-interrupt\_\-init}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{left\_\-position\_\-encoder\_\-interrupt\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}void left\_\-position\_\-encoder\_\-interrupt\_\-init (void)}}
+\label{_worker___complete_2motion_8h_aff7831bb17c1206ab082415ee14e21b1}
+
+
+Definition at line 115 of file motion.h.
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{_worker___complete_2motion_8h_aff7831bb17c1206ab082415ee14e21b1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_worker___complete_2motion_8h_aef3c7f13796512f56db32b784ca4c651}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!LEFT\_\-TURN\_\-BY@{LEFT\_\-TURN\_\-BY}}
+\index{LEFT\_\-TURN\_\-BY@{LEFT\_\-TURN\_\-BY}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{LEFT\_\-TURN\_\-BY}]{\setlength{\rightskip}{0pt plus 5cm}void LEFT\_\-TURN\_\-BY (int {\em Degree})}}
+\label{_worker___complete_2motion_8h_aef3c7f13796512f56db32b784ca4c651}
+
+
+Definition at line 263 of file motion.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{_worker___complete_2motion_8h_aef3c7f13796512f56db32b784ca4c651_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{_worker___complete_2motion_8h_aef3c7f13796512f56db32b784ca4c651_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_worker___complete_2motion_8h_afc027345bdb5eb901ff0d7aa5ffa7306}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!linear\_\-distance\_\-mm@{linear\_\-distance\_\-mm}}
+\index{linear\_\-distance\_\-mm@{linear\_\-distance\_\-mm}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{linear\_\-distance\_\-mm}]{\setlength{\rightskip}{0pt plus 5cm}void linear\_\-distance\_\-mm (unsigned int {\em DistanceInMM})}}
+\label{_worker___complete_2motion_8h_afc027345bdb5eb901ff0d7aa5ffa7306}
+
+
+Definition at line 221 of file motion.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{_worker___complete_2motion_8h_afc027345bdb5eb901ff0d7aa5ffa7306_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{_worker___complete_2motion_8h_afc027345bdb5eb901ff0d7aa5ffa7306_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_worker___complete_2motion_8h_a17cf811a885634d71a23e8d4a20457f0}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!motion\_\-pin\_\-config@{motion\_\-pin\_\-config}}
+\index{motion\_\-pin\_\-config@{motion\_\-pin\_\-config}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{motion\_\-pin\_\-config}]{\setlength{\rightskip}{0pt plus 5cm}void motion\_\-pin\_\-config (void)}}
+\label{_worker___complete_2motion_8h_a17cf811a885634d71a23e8d4a20457f0}
+
+
+Definition at line 85 of file motion.h.
+
+\hypertarget{_worker___complete_2motion_8h_a10cb8a1450bfb05cd9c72ad09ce7f2fe}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!motion\_\-set@{motion\_\-set}}
+\index{motion\_\-set@{motion\_\-set}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{motion\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}void motion\_\-set (unsigned char {\em Direction})}}
+\label{_worker___complete_2motion_8h_a10cb8a1450bfb05cd9c72ad09ce7f2fe}
+
+
+Definition at line 133 of file motion.h.
+
+\hypertarget{_worker___complete_2motion_8h_aad2b5c3032b6186491dea9117e5fa608}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!MOTOR\_\-LEFT\_\-SPEED@{MOTOR\_\-LEFT\_\-SPEED}}
+\index{MOTOR\_\-LEFT\_\-SPEED@{MOTOR\_\-LEFT\_\-SPEED}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{MOTOR\_\-LEFT\_\-SPEED}]{\setlength{\rightskip}{0pt plus 5cm}void MOTOR\_\-LEFT\_\-SPEED (int {\em val})}}
+\label{_worker___complete_2motion_8h_aad2b5c3032b6186491dea9117e5fa608}
+
+
+Definition at line 306 of file motion.h.
+
+\hypertarget{_worker___complete_2motion_8h_aa9a316d01b0ac2faac57c463de947ff8}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!MOTOR\_\-RIGHT\_\-SPEED@{MOTOR\_\-RIGHT\_\-SPEED}}
+\index{MOTOR\_\-RIGHT\_\-SPEED@{MOTOR\_\-RIGHT\_\-SPEED}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{MOTOR\_\-RIGHT\_\-SPEED}]{\setlength{\rightskip}{0pt plus 5cm}void MOTOR\_\-RIGHT\_\-SPEED (int {\em val})}}
+\label{_worker___complete_2motion_8h_aa9a316d01b0ac2faac57c463de947ff8}
+
+
+Definition at line 313 of file motion.h.
+
+\hypertarget{_worker___complete_2motion_8h_a2590e4ebe90aee4206d58ff6c1a64ef5}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!MOVE\_\-FWD@{MOVE\_\-FWD}}
+\index{MOVE\_\-FWD@{MOVE\_\-FWD}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{MOVE\_\-FWD}]{\setlength{\rightskip}{0pt plus 5cm}void MOVE\_\-FWD (void)}}
+\label{_worker___complete_2motion_8h_a2590e4ebe90aee4206d58ff6c1a64ef5}
+
+
+Definition at line 156 of file motion.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=108pt]{_worker___complete_2motion_8h_a2590e4ebe90aee4206d58ff6c1a64ef5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_worker___complete_2motion_8h_a1bfa384685cd0f2882f2aa4befb5011a}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!MOVE\_\-INPLACE\_\-LEFT@{MOVE\_\-INPLACE\_\-LEFT}}
+\index{MOVE\_\-INPLACE\_\-LEFT@{MOVE\_\-INPLACE\_\-LEFT}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{MOVE\_\-INPLACE\_\-LEFT}]{\setlength{\rightskip}{0pt plus 5cm}void MOVE\_\-INPLACE\_\-LEFT (void)}}
+\label{_worker___complete_2motion_8h_a1bfa384685cd0f2882f2aa4befb5011a}
+
+
+Definition at line 186 of file motion.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=132pt]{_worker___complete_2motion_8h_a1bfa384685cd0f2882f2aa4befb5011a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_worker___complete_2motion_8h_a0bfd486466153ad4acc52cd8c2b266dd}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!MOVE\_\-INPLACE\_\-RIGHT@{MOVE\_\-INPLACE\_\-RIGHT}}
+\index{MOVE\_\-INPLACE\_\-RIGHT@{MOVE\_\-INPLACE\_\-RIGHT}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{MOVE\_\-INPLACE\_\-RIGHT}]{\setlength{\rightskip}{0pt plus 5cm}void MOVE\_\-INPLACE\_\-RIGHT (void)}}
+\label{_worker___complete_2motion_8h_a0bfd486466153ad4acc52cd8c2b266dd}
+
+
+Definition at line 191 of file motion.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=135pt]{_worker___complete_2motion_8h_a0bfd486466153ad4acc52cd8c2b266dd_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_worker___complete_2motion_8h_afd305b0fd36b6347d052bcf30e45e421}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!MOVE\_\-LEFT@{MOVE\_\-LEFT}}
+\index{MOVE\_\-LEFT@{MOVE\_\-LEFT}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{MOVE\_\-LEFT}]{\setlength{\rightskip}{0pt plus 5cm}void MOVE\_\-LEFT (void)}}
+\label{_worker___complete_2motion_8h_afd305b0fd36b6347d052bcf30e45e421}
+
+
+Definition at line 166 of file motion.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=109pt]{_worker___complete_2motion_8h_afd305b0fd36b6347d052bcf30e45e421_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_worker___complete_2motion_8h_ad8c06ea69cfb788ebadd51bfefb3dfb0}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!MOVE\_\-REV@{MOVE\_\-REV}}
+\index{MOVE\_\-REV@{MOVE\_\-REV}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{MOVE\_\-REV}]{\setlength{\rightskip}{0pt plus 5cm}void MOVE\_\-REV (void)}}
+\label{_worker___complete_2motion_8h_ad8c06ea69cfb788ebadd51bfefb3dfb0}
+
+
+Definition at line 161 of file motion.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=107pt]{_worker___complete_2motion_8h_ad8c06ea69cfb788ebadd51bfefb3dfb0_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_worker___complete_2motion_8h_a626849715d84e2ec7460bcd787c72089}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!MOVE\_\-RIGHT@{MOVE\_\-RIGHT}}
+\index{MOVE\_\-RIGHT@{MOVE\_\-RIGHT}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{MOVE\_\-RIGHT}]{\setlength{\rightskip}{0pt plus 5cm}void MOVE\_\-RIGHT (void)}}
+\label{_worker___complete_2motion_8h_a626849715d84e2ec7460bcd787c72089}
+
+
+Definition at line 171 of file motion.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=112pt]{_worker___complete_2motion_8h_a626849715d84e2ec7460bcd787c72089_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_worker___complete_2motion_8h_aaf8fc6b7fbccf34af2c35ad5c276435f}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!MOVE\_\-SOFT\_\-LEFT@{MOVE\_\-SOFT\_\-LEFT}}
+\index{MOVE\_\-SOFT\_\-LEFT@{MOVE\_\-SOFT\_\-LEFT}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{MOVE\_\-SOFT\_\-LEFT}]{\setlength{\rightskip}{0pt plus 5cm}void MOVE\_\-SOFT\_\-LEFT (void)}}
+\label{_worker___complete_2motion_8h_aaf8fc6b7fbccf34af2c35ad5c276435f}
+
+
+Definition at line 176 of file motion.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=125pt]{_worker___complete_2motion_8h_aaf8fc6b7fbccf34af2c35ad5c276435f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_worker___complete_2motion_8h_a1756a1df57a60fda3a4156506f857f7a}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!MOVE\_\-SOFT\_\-RIGHT@{MOVE\_\-SOFT\_\-RIGHT}}
+\index{MOVE\_\-SOFT\_\-RIGHT@{MOVE\_\-SOFT\_\-RIGHT}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{MOVE\_\-SOFT\_\-RIGHT}]{\setlength{\rightskip}{0pt plus 5cm}void MOVE\_\-SOFT\_\-RIGHT (void)}}
+\label{_worker___complete_2motion_8h_a1756a1df57a60fda3a4156506f857f7a}
+
+
+Definition at line 181 of file motion.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=128pt]{_worker___complete_2motion_8h_a1756a1df57a60fda3a4156506f857f7a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_worker___complete_2motion_8h_a0db68d18b578ab9e12bc1d80915ef0d7}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!right\_\-encoder\_\-pin\_\-config@{right\_\-encoder\_\-pin\_\-config}}
+\index{right\_\-encoder\_\-pin\_\-config@{right\_\-encoder\_\-pin\_\-config}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{right\_\-encoder\_\-pin\_\-config}]{\setlength{\rightskip}{0pt plus 5cm}void right\_\-encoder\_\-pin\_\-config (void)}}
+\label{_worker___complete_2motion_8h_a0db68d18b578ab9e12bc1d80915ef0d7}
+
+
+Definition at line 101 of file motion.h.
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{_worker___complete_2motion_8h_a0db68d18b578ab9e12bc1d80915ef0d7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_worker___complete_2motion_8h_a1333f7476858c2d76f7d725dfb0e7d88}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!right\_\-position\_\-encoder\_\-interrupt\_\-init@{right\_\-position\_\-encoder\_\-interrupt\_\-init}}
+\index{right\_\-position\_\-encoder\_\-interrupt\_\-init@{right\_\-position\_\-encoder\_\-interrupt\_\-init}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{right\_\-position\_\-encoder\_\-interrupt\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}void right\_\-position\_\-encoder\_\-interrupt\_\-init (void)}}
+\label{_worker___complete_2motion_8h_a1333f7476858c2d76f7d725dfb0e7d88}
+
+
+Definition at line 123 of file motion.h.
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{_worker___complete_2motion_8h_a1333f7476858c2d76f7d725dfb0e7d88_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_worker___complete_2motion_8h_ac66d8febdb0927d499eb451e211ec6db}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!RIGHT\_\-TURN\_\-BY@{RIGHT\_\-TURN\_\-BY}}
+\index{RIGHT\_\-TURN\_\-BY@{RIGHT\_\-TURN\_\-BY}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{RIGHT\_\-TURN\_\-BY}]{\setlength{\rightskip}{0pt plus 5cm}void RIGHT\_\-TURN\_\-BY (int {\em Degree})}}
+\label{_worker___complete_2motion_8h_ac66d8febdb0927d499eb451e211ec6db}
+
+
+Definition at line 256 of file motion.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{_worker___complete_2motion_8h_ac66d8febdb0927d499eb451e211ec6db_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{_worker___complete_2motion_8h_ac66d8febdb0927d499eb451e211ec6db_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_worker___complete_2motion_8h_a94ac7b12f6316deea91243b154b7abb4}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!STOP@{STOP}}
+\index{STOP@{STOP}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{STOP}]{\setlength{\rightskip}{0pt plus 5cm}void STOP (void)}}
+\label{_worker___complete_2motion_8h_a94ac7b12f6316deea91243b154b7abb4}
+
+
+Definition at line 196 of file motion.h.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=93pt]{_worker___complete_2motion_8h_a94ac7b12f6316deea91243b154b7abb4_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_worker___complete_2motion_8h_a578f7cc9b705ce549aa856c927b102e8}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!timer5\_\-init@{timer5\_\-init}}
+\index{timer5\_\-init@{timer5\_\-init}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{timer5\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}void timer5\_\-init ()}}
+\label{_worker___complete_2motion_8h_a578f7cc9b705ce549aa856c927b102e8}
+
+
+Definition at line 277 of file motion.h.
+
+\hypertarget{_worker___complete_2motion_8h_aa5ae897cf316acc5c766757ffd41db19}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!velocity@{velocity}}
+\index{velocity@{velocity}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{velocity}]{\setlength{\rightskip}{0pt plus 5cm}void velocity (unsigned char {\em left\_\-motor}, \/  unsigned char {\em right\_\-motor})}}
+\label{_worker___complete_2motion_8h_aa5ae897cf316acc5c766757ffd41db19}
+
+
+Definition at line 299 of file motion.h.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{_worker___complete_2motion_8h_a5004342352f04d68ff8f12c17ec2cf6f}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!completeBlack@{completeBlack}}
+\index{completeBlack@{completeBlack}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{completeBlack}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf completeBlack} = 0}}
+\label{_worker___complete_2motion_8h_a5004342352f04d68ff8f12c17ec2cf6f}
+
+
+Definition at line 60 of file motion.h.
+
+\hypertarget{_worker___complete_2motion_8h_a9719b725d5dde7ae77cf440b08ab2e21}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!Degrees@{Degrees}}
+\index{Degrees@{Degrees}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{Degrees}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf Degrees}}}
+\label{_worker___complete_2motion_8h_a9719b725d5dde7ae77cf440b08ab2e21}
+
+
+Definition at line 58 of file motion.h.
+
+\hypertarget{_worker___complete_2motion_8h_ae515db750874720ff18664c8252ae6d8}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!ShaftCountLeft@{ShaftCountLeft}}
+\index{ShaftCountLeft@{ShaftCountLeft}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{ShaftCountLeft}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf ShaftCountLeft} = 0}}
+\label{_worker___complete_2motion_8h_ae515db750874720ff18664c8252ae6d8}
+
+
+Definition at line 55 of file motion.h.
+
+\hypertarget{_worker___complete_2motion_8h_a13b7401bc88be06cfce141b3aacd5256}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!ShaftCountMax@{ShaftCountMax}}
+\index{ShaftCountMax@{ShaftCountMax}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{ShaftCountMax}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf ShaftCountMax} = 10}}
+\label{_worker___complete_2motion_8h_a13b7401bc88be06cfce141b3aacd5256}
+
+
+Definition at line 57 of file motion.h.
+
+\hypertarget{_worker___complete_2motion_8h_a871859f12e0b2563b435d6c3c6b2759e}{
+\index{Worker\_\-Complete/motion.h@{Worker\_\-Complete/motion.h}!ShaftCountRight@{ShaftCountRight}}
+\index{ShaftCountRight@{ShaftCountRight}!Worker_Complete/motion.h@{Worker\_\-Complete/motion.h}}
+\subsubsection[{ShaftCountRight}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf ShaftCountRight} = 0}}
+\label{_worker___complete_2motion_8h_a871859f12e0b2563b435d6c3c6b2759e}
+
+
+Definition at line 56 of file motion.h.
+

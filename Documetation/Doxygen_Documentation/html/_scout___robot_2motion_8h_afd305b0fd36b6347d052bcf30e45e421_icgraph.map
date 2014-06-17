@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" href="$_worker___complete_2motion_8h.html#aef3c7f13796512f56db32b784ca4c651" title="LEFT_TURN_BY" alt="" coords="152,5,272,35"/>
+<area shape="rect" href="$_worker___complete_8c.html#a32c4d0c2e2411ca3237d45985abdcaf7" title="This function is used to rotate the robot back to the white line." alt="" coords="321,5,401,35"/>
+<area shape="rect" href="$_worker___complete_8c.html#a744180995c9d3d93c82f9314d9f1fbbe" title="Once the worker robot reaches the specifed location where the object was detected..." alt="" coords="452,5,537,35"/>
+<area shape="rect" href="$_worker___complete_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667" title="Execution begin here." alt="" coords="588,5,636,35"/>
+</map>

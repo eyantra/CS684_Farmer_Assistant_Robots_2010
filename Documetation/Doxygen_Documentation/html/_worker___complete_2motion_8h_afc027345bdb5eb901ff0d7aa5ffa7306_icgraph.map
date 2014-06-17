@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" href="$_worker___complete_2motion_8h.html#a211524abdbae5dd0a77807b843ec60c7" title="back_mm" alt="" coords="200,56,277,85"/>
+<area shape="rect" href="$_worker___complete_2motion_8h.html#a3a0711f34af615c274e67a580696f9ad" title="forward_mm" alt="" coords="193,109,284,139"/>
+<area shape="rect" href="$_worker___complete_8c.html#aead7681c698f81d34a9ee6d6e0c57482" title="After grabbing the object move the robot backward by the distance specified." alt="" coords="333,5,421,35"/>
+<area shape="rect" href="$_worker___complete_8c.html#a744180995c9d3d93c82f9314d9f1fbbe" title="Once the worker robot reaches the specifed location where the object was detected..." alt="" coords="471,84,556,113"/>
+<area shape="rect" href="$_worker___complete_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667" title="Execution begin here." alt="" coords="607,84,655,113"/>
+<area shape="rect" href="$_worker___complete_8c.html#a0c9df54dbd6d34b2f4148de0c3de923b" title="Moves the worker Robot towards the object to be collected depending on how far the..." alt="" coords="333,109,421,139"/>
+</map>

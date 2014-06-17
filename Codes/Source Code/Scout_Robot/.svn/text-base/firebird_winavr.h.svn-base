@@ -1,0 +1,54 @@
+#include <avr/io.h>
+#include <avr/interrupt.h>
+#include <util/delay.h>
+#include <math.h>
+
+#include "motion.h"
+#include "whiteline.h"
+#include "ir.h"
+#include "lcd.h"
+#include "buzzer.h"
+
+
+//initialise the ports used for distance measurment ISR
+init_dist_measure()
+{
+	DDRE = 0x00;
+	PORTE = PORTE | 0x30;
+}
+
+//init uart 0 for zegbee
+void uart0_init(void)
+{
+UCSR0B = 0x00; //disable while setting baud rate
+UCSR0A = 0x00;
+UCSR0C = 0x06;
+UBRR0L = 0x47; //set baud rate lo set to 9600
+UBRR0H = 0x00; //set baud rate hi
+UCSR0B = 0x90;	//98
+
+}
+
+//Function to initialize ports
+void init_devices()
+{
+ cli(); //Clears the global interrupts
+ motion_pin_config();
+ port_init();
+ init_adc();
+ timer5_init();
+ init_lcd();
+ lcd_init();
+ lcd_set_4bit();
+
+ init_buzzer();
+ uart0_init();
+ sei(); //Enables the global interrupts
+}
+
+
+
+
+
+
+
